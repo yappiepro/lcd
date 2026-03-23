@@ -18,5 +18,7 @@ export default defineNuxtConfig({
   nitro: {
     preset: 'static'
   },
-  ssr: false
+  routeRules: {
+    '/**': { prerender: true }
+  }
 })
