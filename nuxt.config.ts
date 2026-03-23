@@ -4,6 +4,7 @@ export default defineNuxtConfig({
   devtools: { enabled: true },
   modules: ['@nuxtjs/tailwindcss'],
   app: {
+    baseURL: '/lcd/',
     head: {
       title: 'СТРОИМ ИЗ CLT | Дома из CLT панелей',
       meta: [
@@ -16,5 +17,6 @@ export default defineNuxtConfig({
   css: ['~/assets/css/animations.css'],
   nitro: {
     preset: 'static'
-  }
+  },
+  ssr: false
 })
