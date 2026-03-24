@@ -47,7 +47,7 @@
 
             <!-- Малое фото -->
             <div class="flex justify-end">
-              <img src="/images/верталет.jpg" alt="Вертолёт" class="makko-helicopter-image rounded-xl w-80 h-48 object-cover" />
+              <img src="/images/helicopter.jpg" alt="Вертолёт" class="makko-helicopter-image rounded-xl w-80 h-48 object-cover" />
             </div>
           </div>
         </div>
