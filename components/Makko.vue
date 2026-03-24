@@ -5,7 +5,7 @@
         <div class="grid lg:grid-cols-2 gap-12 items-stretch">
           <!-- Левая часть - большое фото -->
           <div class="makko-left-part">
-            <img src="images/1_1.jpeg" alt="Здание CLT" class="makko-main-image rounded-2xl w-full h-full min-h-[600px] object-cover" />
+            <img src="/images/1_1.jpeg" alt="Здание CLT" class="makko-main-image rounded-2xl w-full h-full min-h-[600px] object-cover" />
           </div>
 
           <!-- Правая часть - контент -->
@@ -47,7 +47,7 @@
 
             <!-- Малое фото -->
             <div class="flex justify-end">
-              <img src="images/helicopter.jpg" alt="Вертолёт" class="makko-helicopter-image rounded-xl w-80 h-48 object-cover" />
+              <img src="/images/helicopter.jpg" alt="Вертолёт" class="makko-helicopter-image rounded-xl w-80 h-48 object-cover" />
             </div>
           </div>
         </div>

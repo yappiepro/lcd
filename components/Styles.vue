@@ -22,7 +22,7 @@
           <!-- Фото -->
           <div class="flex justify-center">
             <div class="space-y-4">
-              <img src="images/man.png" alt="Олег Макаревич" class="rounded-lg w-full max-w-sm object-cover" />
+              <img src="/images/man.png" alt="Олег Макаревич" class="rounded-lg w-full max-w-sm object-cover" />
               <p class="text-white text-center">Олег Макаревич</p>
             </div>
           </div>
