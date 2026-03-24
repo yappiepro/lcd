@@ -24,9 +24,11 @@
           <div class="flex justify-center">
             <a
               href="#brief"
-              class="magnetic-btn btn-liquid w-32 h-32 md:w-40 md:h-40 rounded-full bg-black flex flex-col items-start justify-center text-white font-medium hover:bg-gray-800 transition-colors pl-8 md:pl-10 pr-6 md:pr-8 py-6 md:py-8"
+              class="magnetic-btn btn-liquid w-40 h-40 md:w-48 md:h-48 lg:w-56 lg:h-56 rounded-full bg-black flex flex-col items-start justify-center text-white font-medium hover:bg-gray-800 transition-colors pl-10 md:pl-12 lg:pl-14 pr-8 md:pr-10 lg:pr-12 py-8 md:py-10 lg:py-12"
             >
-              <span class="text-left leading-tight text-sm md:text-lg">отправить<br />бриф ↗</span>
+              <span class="text-left leading-tight text-base md:text-lg lg:text-xl"
+                >отправить<br />бриф ↗</span
+              >
             </a>
           </div>
         </div>

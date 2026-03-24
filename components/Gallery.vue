@@ -59,12 +59,12 @@
           </button>
 
           <!-- Индикаторы -->
-          <div class="flex justify-center space-x-2 mt-6">
+          <div class="flex justify-center space-x-1.5 mt-4">
             <button
               v-for="(image, index) in images"
               :key="index"
               :class="[
-                'w-2 h-2 rounded-full transition-colors',
+                'w-1.5 h-1.5 rounded-full transition-colors',
                 currentSlide === index ? 'bg-white' : 'bg-white/30'
               ]"
               @click="currentSlide = index"

@@ -34,9 +34,9 @@
               <div class="relative flex-shrink-0">
                 <a
                   href="#"
-                  class="magnetic-btn btn-liquid w-24 h-24 md:w-32 md:h-32 lg:w-40 lg:h-40 rounded-full bg-black flex flex-col items-start justify-center text-white font-medium hover:bg-gray-800 transition-colors pl-6 md:pl-8 lg:pl-10 pr-4 md:pr-6 lg:pr-8 py-4 md:py-6 lg:py-8"
+                  class="magnetic-btn btn-liquid w-40 h-40 md:w-48 md:h-48 lg:w-56 lg:h-56 rounded-full bg-black flex flex-col items-start justify-center text-white font-medium hover:bg-gray-800 transition-colors pl-10 md:pl-12 lg:pl-14 pr-8 md:pr-10 lg:pr-12 py-8 md:py-10 lg:py-12"
                 >
-                  <span class="text-left leading-tight text-xs md:text-sm lg:text-lg"
+                  <span class="text-left leading-tight text-base md:text-lg lg:text-xl"
                     >подробнее<br />об CLT ↗</span
                   >
                 </a>

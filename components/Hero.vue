@@ -23,7 +23,7 @@
         <div class="max-w-4xl mt-24 md:mt-32 lg:mt-40">
           <!-- Заголовок -->
           <h1
-            class="text-reveal-target text-5xl md:text-7xl lg:text-8xl font-bold text-white leading-tight mb-6 md:mb-8"
+            class="text-reveal-target text-6xl md:text-7xl lg:text-8xl font-bold text-white leading-tight mb-6 md:mb-8"
           >
             <span class="text-reveal-line">Строим дома из CLT</span>
             <span class="text-reveal-line">для жизни и бизнеса</span>
@@ -46,7 +46,7 @@
           <!-- Кнопка - видна сразу без анимации -->
           <a
             href="#contact"
-            class="magnetic-btn btn-liquid w-32 h-32 md:w-40 md:h-40 lg:w-48 lg:h-48 rounded-full bg-black flex flex-col items-start justify-center text-white font-medium hover:bg-gray-800 transition-colors pl-8 md:pl-10 lg:pl-12 pr-6 md:pr-8 lg:pr-10 py-6 md:py-8 lg:py-10"
+            class="magnetic-btn btn-liquid w-40 h-40 md:w-48 md:h-48 lg:w-56 lg:h-56 rounded-full bg-black flex flex-col items-start justify-center text-white font-medium hover:bg-gray-800 transition-colors pl-10 md:pl-12 lg:pl-14 pr-8 md:pr-10 lg:pr-12 py-8 md:py-10 lg:py-12"
           >
             <span class="text-left leading-tight text-base md:text-lg lg:text-xl"
               >ЗАКАЗАТЬ<br />ПРОЕКТ ↗</span
