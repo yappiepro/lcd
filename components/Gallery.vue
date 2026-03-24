@@ -54,11 +54,11 @@
 <script setup>
 const currentSlide = ref(0)
 const images = [
-  '/lcd/images/feater1.jpg',
-  '/lcd/images/feater2.jpeg',
-  '/lcd/images/feater3.jpg',
-  '/lcd/images/1_1.jpeg',
-  '/lcd/images/2_2.jpg'
+  'images/feater1.jpg',
+  'images/feater2.jpeg',
+  'images/feater3.jpg',
+  'images/1_1.jpeg',
+  'images/2_2.jpg'
 ]
 
 const nextSlide = () => {

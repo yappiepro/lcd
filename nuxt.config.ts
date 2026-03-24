@@ -4,7 +4,7 @@ export default defineNuxtConfig({
   devtools: { enabled: true },
   modules: ['@nuxtjs/tailwindcss'],
   app: {
-    baseURL: '/lcd/',
+    baseURL: process.env.NUXT_APP_BASE_URL || '/',
     head: {
       title: 'СТРОИМ ИЗ CLT | Дома из CLT панелей',
       meta: [
