@@ -21,15 +21,17 @@
           </div>
 
           <!-- Кнопка -->
-          <a 
-            href="#brief"
-            class="w-32 h-32 rounded-full bg-gray-900 flex flex-col items-center justify-center text-white hover:bg-gray-800 transition-colors px-6 py-4"
-          >
-            <svg class="w-6 h-6 transform -rotate-45 mb-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2.5">
-              <path stroke-linecap="round" stroke-linejoin="round" d="M17 8l4 4m0 0l-4 4m4-4H3" />
-            </svg>
-            <span class="text-center leading-tight text-base">отправить<br/>бриф</span>
-          </a>
+          <div class="flex justify-center">
+            <a
+              href="#brief"
+              class="w-32 h-32 rounded-full bg-gray-900 flex flex-col items-center justify-center text-white hover:bg-gray-800 transition-colors"
+            >
+              <svg class="w-6 h-6 transform -rotate-45 mb-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2.5">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M17 8l4 4m0 0l-4 4m4-4H3" />
+              </svg>
+              <span class="text-center leading-tight text-base">отправить<br/>бриф</span>
+            </a>
+          </div>
         </div>
       </div>
     </div>
