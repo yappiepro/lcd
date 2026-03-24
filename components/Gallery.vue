@@ -10,9 +10,9 @@
         </div>
 
         <!-- Слайдер на всю ширину -->
-        <div class="relative">
+        <div class="relative -mx-8 md:-mx-12 lg:-mx-16">
           <!-- Изображение -->
-          <div class="overflow-hidden rounded-2xl">
+          <div class="overflow-hidden">
             <img :src="images[currentSlide]" alt="Проект" class="gallery-image w-full h-[600px] object-cover" />
           </div>
 

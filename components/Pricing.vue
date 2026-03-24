@@ -40,9 +40,7 @@
             <div class="mb-8 pb-8 border-b border-gray-300">
               <div class="flex items-center justify-between mb-4">
                 <h3 class="text-xl font-bold text-gray-900">Архитектурное проектирование</h3>
-                <svg class="w-5 h-5 text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3" />
-                </svg>
+                <span class="text-lg text-gray-400">↗</span>
               </div>
               <div class="space-y-2 text-sm text-gray-600">
                 <p>Визуальный осмотр инфраструктуры и расположения площадки</p>

@@ -14,26 +14,23 @@
             <div>
               <p class="text-white text-xl md:text-2xl leading-relaxed">
                 Мы выбрали строительство по технологиям CLT, так как этот экологичный материал имеет
-                <div class="w-4 h-4 inline-block align-middle mx-1 rounded-full bg-orange-200 blur-sm"></div>
+                <span class="inline-block w-4 h-4 align-middle mx-1 rounded-full bg-orange-200 blur-sm"></span>
                 прочность бетона и бесконечные варианты дизайна.
               </p>
             </div>
 
-            <!-- Заголовок -->
-            <div class="relative">
+            <!-- Заголовок с кнопкой -->
+            <div class="flex items-center gap-8">
               <h2 class="text-6xl md:text-8xl font-bold text-white">
                 МАККО<br/>И CLT
               </h2>
               <!-- Кнопка -->
-              <div class="relative">
+              <div class="relative flex-shrink-0">
                 <a
                   href="#"
-                  class="w-32 h-32 rounded-full bg-black border border-white/20 flex flex-col items-start justify-center text-white text-base hover:bg-gray-900 transition-colors pl-8"
+                  class="magnetic-btn btn-liquid w-32 h-32 md:w-40 md:h-40 rounded-full bg-black flex flex-col items-start justify-center text-white font-medium hover:bg-gray-800 transition-colors pl-8 md:pl-10 pr-6 md:pr-8 py-6 md:py-8"
                 >
-                  <svg class="w-6 h-6 transform -rotate-45 mb-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2.5">
-                    <path stroke-linecap="round" stroke-linejoin="round" d="M17 8l4 4m0 0l-4 4m4-4H3" />
-                  </svg>
-                  <span class="text-left leading-tight">подробнее<br/>об CLT</span>
+                  <span class="text-left leading-tight text-sm md:text-lg">подробнее<br/>об CLT ↗</span>
                 </a>
               </div>
             </div>

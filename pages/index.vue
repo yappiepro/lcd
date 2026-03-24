@@ -2,8 +2,7 @@
   <div class="relative">
     <!-- Noise overlay -->
     <div class="noise-overlay fixed inset-0 pointer-events-none z-[9000]"></div>
-    
-    <CustomCursor />
+
     <Header />
     <main>
       <Hero />
@@ -11,6 +10,7 @@
       <Makko />
       <Services />
       <Gallery />
+      <ArchitecturalStyles />
       <Projects />
       <Pricing />
       <Team />

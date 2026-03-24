@@ -48,12 +48,9 @@
           <!-- Кнопка - видна сразу без анимации -->
           <a
             href="#contact"
-            class="magnetic-btn btn-liquid w-24 h-24 md:w-28 md:h-28 rounded-full bg-black flex flex-col items-start justify-center text-white font-medium hover:bg-gray-800 transition-colors pl-6 md:pl-8"
+            class="magnetic-btn btn-liquid w-32 h-32 md:w-40 md:h-40 rounded-full bg-black flex flex-col items-start justify-center text-white font-medium hover:bg-gray-800 transition-colors pl-8 md:pl-10 pr-6 md:pr-8 py-6 md:py-8"
           >
-            <svg class="w-5 h-5 md:w-6 md:h-6 transform -rotate-45 mb-1 md:mb-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2.5">
-              <path stroke-linecap="round" stroke-linejoin="round" d="M17 8l4 4m0 0l-4 4m4-4H3" />
-            </svg>
-            <span class="text-left leading-tight text-xs md:text-base">ЗАКАЗАТЬ<br/>ПРОЕКТ</span>
+            <span class="text-left leading-tight text-sm md:text-lg">ЗАКАЗАТЬ<br/>ПРОЕКТ ↗</span>
           </a>
         </div>
       </div>

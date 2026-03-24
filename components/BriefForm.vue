@@ -24,12 +24,9 @@
           <div class="flex justify-center">
             <a
               href="#brief"
-              class="w-32 h-32 rounded-full bg-gray-900 flex flex-col items-center justify-center text-white hover:bg-gray-800 transition-colors"
+              class="magnetic-btn btn-liquid w-32 h-32 md:w-40 md:h-40 rounded-full bg-black flex flex-col items-start justify-center text-white font-medium hover:bg-gray-800 transition-colors pl-8 md:pl-10 pr-6 md:pr-8 py-6 md:py-8"
             >
-              <svg class="w-6 h-6 transform -rotate-45 mb-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2.5">
-                <path stroke-linecap="round" stroke-linejoin="round" d="M17 8l4 4m0 0l-4 4m4-4H3" />
-              </svg>
-              <span class="text-center leading-tight text-base">отправить<br/>бриф</span>
+              <span class="text-left leading-tight text-sm md:text-lg">отправить<br/>бриф ↗</span>
             </a>
           </div>
         </div>

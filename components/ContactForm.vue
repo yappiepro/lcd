@@ -6,7 +6,7 @@
           <!-- Левая часть - текст -->
           <div class="space-y-8">
             <h2 class="text-4xl md:text-5xl font-bold text-white">
-              Взаимодействие с Нами<br/>как начало Пути
+              Взаимодействие с Нами как начало Пути
               <div class="w-6 h-6 inline-block align-middle mx-2 rounded-full bg-orange-200 blur-sm"></div>
             </h2>
 
@@ -50,7 +50,7 @@
         <div class="mt-20">
           <div class="relative">
             <!-- Линия -->
-            <div class="absolute top-1/2 left-0 right-0 h-px bg-gray-700 transform -translate-y-1/2"></div>
+            <div class="absolute top-[calc(50%-18px)] left-0 right-0 h-[2px] bg-gradient-to-r from-white via-gray-500 to-black transform -translate-y-1/2"></div>
             
             <!-- Точки и подписи -->
             <div class="grid grid-cols-4 gap-4 relative z-10">

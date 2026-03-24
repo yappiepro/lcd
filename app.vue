@@ -4,7 +4,6 @@
     <div class="noise-overlay fixed inset-0 pointer-events-none z-[9000]"></div>
 
     <ClientOnly>
-      <CustomCursor />
       <SmoothScroll />
     </ClientOnly>
     <NuxtPage />
