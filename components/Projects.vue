@@ -98,20 +98,20 @@ const projects = [
   {
     title: 'КОТТЕДЖНЫЙ ПОСЕЛОК КОНАКОВО',
     description: 'задуман как современное загородное пространство для счастливой жизни.',
-    image: '/images/feater1.jpg',
-    thumb: '/images/feater1.jpg'
+    image: '/lcd/images/feater1.jpg',
+    thumb: '/lcd/images/feater1.jpg'
   },
   {
     title: 'ПРОЕКТ 2',
     description: 'Современный дом в лесу.',
-    image: '/images/feater2.jpeg',
-    thumb: '/images/feater2.jpeg'
+    image: '/lcd/images/feater2.jpeg',
+    thumb: '/lcd/images/feater2.jpeg'
   },
   {
     title: 'ПРОЕКТ 3',
     description: 'Дом на склоне горы.',
-    image: '/images/feater3.jpg',
-    thumb: '/images/feater3.jpg'
+    image: '/lcd/images/feater3.jpg',
+    thumb: '/lcd/images/feater3.jpg'
   }
 ]
 
