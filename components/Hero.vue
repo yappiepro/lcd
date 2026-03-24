@@ -20,24 +20,22 @@
     <!-- Основной контент -->
     <div class="relative z-10 flex-1 w-full px-8 md:px-12 lg:px-16 py-8 md:py-20">
       <div class="max-w-[1600px] mx-auto">
-        <div class="max-w-4xl mt-24 md:mt-32 lg:mt-40">
+        <div class="max-w-4xl mt-6 md:mt-10 lg:mt-14">
           <!-- Заголовок -->
           <h1
-            class="text-reveal-target text-6xl md:text-7xl lg:text-8xl font-bold text-white leading-tight mb-6 md:mb-8"
+            class="text-reveal-target text-5xl md:text-5xl lg:text-5xl font-bold text-white leading-none mb-6 md:mb-8"
           >
             <span class="text-reveal-line">Строим дома из CLT</span>
             <span class="text-reveal-line">для жизни и бизнеса</span>
           </h1>
 
           <!-- Подзаголовок -->
-          <h2 class="animate-on-scroll text-2xl md:text-3xl text-white/90 font-light mb-8 md:mb-10">
+          <h2 class="animate-on-scroll text-lg md:text-xl text-white/90 font-light mb-6 md:mb-8">
             Индивидуальный подход к строительству
           </h2>
 
           <!-- Описание -->
-          <ul
-            class="animate-on-scroll delay-100 space-y-3 md:space-y-4 text-white/80 text-base md:text-lg lg:text-xl mb-10 md:mb-12"
-          >
+          <ul class="space-y-0 text-white/80 text-sm md:text-base lg:text-lg mb-10 md:mb-12">
             <li>Профильная CLT компания</li>
             <li>Архитектура и реализация «под ключ»</li>
             <li>Авторское сопровождение проекта и надзор</li>
@@ -46,9 +44,9 @@
           <!-- Кнопка - видна сразу без анимации -->
           <a
             href="#contact"
-            class="magnetic-btn btn-liquid w-40 h-40 md:w-48 md:h-48 lg:w-56 lg:h-56 rounded-full bg-black flex flex-col items-start justify-center text-white font-medium hover:bg-gray-800 transition-colors pl-10 md:pl-12 lg:pl-14 pr-8 md:pr-10 lg:pr-12 py-8 md:py-10 lg:py-12 mt-8 md:mt-10 lg:mt-12"
+            class="magnetic-btn btn-liquid w-24 h-24 md:w-28 md:h-28 lg:w-32 lg:h-32 rounded-full bg-black flex flex-col items-center justify-center text-white font-medium hover:bg-gray-800 transition-colors px-5 md:px-6 lg:px-8 py-5 md:py-6 lg:py-8 mt-8 md:mt-10 lg:mt-12"
           >
-            <span class="text-left leading-tight text-base md:text-lg lg:text-xl"
+            <span class="text-center leading-tight text-xs md:text-sm lg:text-base"
               >ЗАКАЗАТЬ<br />ПРОЕКТ ↗</span
             >
           </a>

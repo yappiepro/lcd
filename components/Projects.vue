@@ -95,9 +95,9 @@
               </div>
               <a
                 href="#contact"
-                class="magnetic-btn btn-liquid w-40 h-40 md:w-48 md:h-48 lg:w-56 lg:h-56 rounded-full bg-black flex flex-col items-start justify-center text-white font-medium hover:bg-gray-800 transition-colors pl-10 md:pl-12 lg:pl-14 pr-8 md:pr-10 lg:pr-12 py-8 md:py-10 lg:py-12 flex-shrink-0"
+                class="magnetic-btn btn-liquid w-24 h-24 md:w-28 md:h-28 lg:w-32 lg:h-32 rounded-full bg-black flex flex-col items-center justify-center text-white font-medium hover:bg-gray-800 transition-colors px-5 md:px-6 lg:px-8 py-5 md:py-6 lg:py-8 flex-shrink-0"
               >
-                <span class="text-left leading-tight text-base md:text-lg lg:text-xl"
+                <span class="text-center leading-tight text-xs md:text-sm lg:text-base"
                   >посмотреть<br />проекты ↗</span
                 >
               </a>
