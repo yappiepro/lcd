@@ -27,7 +27,7 @@
 
             <!-- Заголовок с кнопкой -->
             <div class="flex flex-col md:flex-row items-start md:items-center gap-4 md:gap-8">
-              <h2 class="text-3xl md:text-6xl lg:text-8xl font-bold text-white">
+              <h2 class="text-4xl md:text-6xl lg:text-8xl font-bold text-white">
                 МАККО<br />И CLT
               </h2>
               <!-- Кнопка -->

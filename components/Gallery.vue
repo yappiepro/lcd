@@ -4,7 +4,7 @@
       <div class="max-w-[1600px] mx-auto">
         <!-- Заголовок -->
         <div class="text-center mb-12">
-          <h2 class="text-4xl md:text-6xl font-bold text-white">ПРОЕКТЫ</h2>
+          <h2 class="text-5xl md:text-6xl font-bold text-white">ПРОЕКТЫ</h2>
         </div>
 
         <!-- Слайдер на всю ширину -->

@@ -4,7 +4,7 @@
       <div class="max-w-[1600px] mx-auto">
         <!-- Заголовок -->
         <div class="text-center mb-16">
-          <h2 class="text-4xl md:text-5xl font-bold text-gray-900 text-left">
+          <h2 class="text-5xl md:text-5xl font-bold text-gray-900 text-left">
             Технологии В Действии:<br />Кейсы и Готовые Решения
           </h2>
         </div>

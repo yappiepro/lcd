@@ -6,7 +6,7 @@
         <div class="text-center mb-12">
           <div class="flex items-center justify-center">
             <div class="w-8 h-8 rounded-full bg-orange-200 blur-sm mr-4"></div>
-            <h2 class="text-4xl md:text-5xl font-bold text-gray-900">
+            <h2 class="text-5xl md:text-5xl font-bold text-gray-900">
               Публикации, Новости и События
             </h2>
           </div>

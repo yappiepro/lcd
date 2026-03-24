@@ -5,7 +5,7 @@
         <div class="grid lg:grid-cols-2 gap-12 items-center">
           <!-- Левая часть - текст -->
           <div class="space-y-8">
-            <h2 class="text-4xl md:text-5xl font-bold text-white">
+            <h2 class="text-5xl md:text-5xl font-bold text-white">
               Взаимодействие с Нами как начало Пути
               <div
                 class="w-6 h-6 inline-block align-middle mx-2 rounded-full bg-orange-200 blur-sm"

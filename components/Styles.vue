@@ -4,7 +4,7 @@
       <div class="max-w-[1600px] mx-auto">
         <!-- Заголовок секции -->
         <div class="text-center mb-16 relative">
-          <h2 class="text-4xl md:text-6xl lg:text-7xl font-bold text-white">
+          <h2 class="text-5xl md:text-6xl lg:text-7xl font-bold text-white">
             ВАШ
             <div
               class="w-8 h-8 inline-block align-middle mx-2 rounded-full bg-orange-200 blur-sm"

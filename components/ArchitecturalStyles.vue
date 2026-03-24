@@ -7,7 +7,7 @@
           <div class="flex items-center justify-center gap-2 md:gap-4">
             <span class="hidden md:block text-6xl md:text-8xl font-light text-gray-900">[</span>
             <div class="text-center">
-              <h2 class="text-3xl md:text-5xl lg:text-7xl font-bold text-gray-900 leading-tight">
+              <h2 class="text-4xl md:text-5xl lg:text-7xl font-bold text-gray-900 leading-tight">
                 СТИЛИ ДЛЯ<br />ЖИЗНИ
               </h2>
               <div class="flex items-center justify-center gap-2 mt-2">
