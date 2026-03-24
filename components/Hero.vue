@@ -6,10 +6,10 @@
 
     <!-- Фоновое видео -->
     <div class="absolute inset-0 z-0 overflow-hidden">
-      <video 
-        autoplay 
-        muted 
-        loop 
+      <video
+        autoplay
+        muted
+        loop
         playsinline
         class="w-full h-full object-cover"
       >
