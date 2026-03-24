@@ -2,7 +2,7 @@
 export default defineNuxtConfig({
   compatibilityDate: '2024-11-01',
   devtools: { enabled: true },
-  modules: ['@nuxtjs/tailwindcss'],
+  modules: ['@nuxtjs/tailwindcss', '@nuxt/image', '@vueuse/nuxt'],
   app: {
     baseURL: process.env.NUXT_APP_BASE_URL || '/',
     head: {
@@ -10,7 +10,11 @@ export default defineNuxtConfig({
       meta: [
         { charset: 'utf-8' },
         { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-        { name: 'description', content: 'Современные дома из CLT панелей под ключ. Проектирование, производство и монтаж.' }
+        {
+          name: 'description',
+          content:
+            'Современные дома из CLT панелей под ключ. Проектирование, производство и монтаж.'
+        }
       ]
     }
   },
@@ -23,5 +27,8 @@ export default defineNuxtConfig({
   },
   routeRules: {
     '/**': { prerender: true }
+  },
+  image: {
+    domains: ['localhost:3000', 'yappiepro.github.io']
   }
 })

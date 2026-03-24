@@ -4,17 +4,24 @@
       <div class="max-w-[1600px] mx-auto">
         <div class="flex items-center justify-between h-20">
           <!-- Логотип -->
-          <div class="w-10 h-10 border-2 border-white rounded-full flex items-center justify-center">
+          <div
+            class="w-10 h-10 border-2 border-white rounded-full flex items-center justify-center"
+          >
             <span class="text-white text-base font-light">МК</span>
           </div>
 
           <!-- Кнопка меню (справа) -->
-          <button 
-            class="p-2 text-white hover:text-orange-400 transition-colors" 
+          <button
+            class="p-2 text-white hover:text-orange-400 transition-colors"
             @click="isMenuOpen = true"
           >
             <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M4 6h16M4 12h16M4 18h16"
+              />
             </svg>
           </button>
         </div>
@@ -31,11 +38,7 @@
     leave-from-class="opacity-100"
     leave-to-class="opacity-0"
   >
-    <div 
-      v-if="isMenuOpen" 
-      class="fixed inset-0 bg-black/80 z-50"
-      @click="isMenuOpen = false"
-    ></div>
+    <div v-if="isMenuOpen" class="fixed inset-0 bg-black/80 z-50" @click="isMenuOpen = false"></div>
   </transition>
 
   <!-- Выезжающее меню справа -->
@@ -47,19 +50,29 @@
     leave-from-class="translate-x-0"
     leave-to-class="translate-x-full"
   >
-    <div 
-      v-if="isMenuOpen" 
+    <div
+      v-if="isMenuOpen"
       class="fixed top-0 right-0 h-full w-full max-w-md bg-[#111] z-50 shadow-2xl"
     >
       <div class="flex flex-col h-full p-4 md:p-8">
         <!-- Кнопка закрыть -->
         <div class="flex justify-end mb-4 md:mb-8">
           <button
-            @click="isMenuOpen = false"
             class="p-2 text-white hover:text-orange-400 transition-colors"
+            @click="isMenuOpen = false"
           >
-            <svg class="w-6 h-6 md:w-8 md:h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+            <svg
+              class="w-6 h-6 md:w-8 md:h-8"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M6 18L18 6M6 6l12 12"
+              />
             </svg>
           </button>
         </div>
@@ -112,7 +125,9 @@
 
         <!-- Логотип внизу -->
         <div class="text-center pt-4 md:pt-8 border-t border-gray-800">
-          <div class="w-12 h-12 md:w-16 md:h-16 border-2 border-white/30 rounded-full flex items-center justify-center mx-auto mb-2 md:mb-4">
+          <div
+            class="w-12 h-12 md:w-16 md:h-16 border-2 border-white/30 rounded-full flex items-center justify-center mx-auto mb-2 md:mb-4"
+          >
             <span class="text-white/60 text-lg md:text-2xl font-light">МК</span>
           </div>
           <p class="text-gray-500 text-xs md:text-sm">© 2026 Строим из CLT</p>
@@ -122,6 +137,6 @@
   </transition>
 </template>
 
-<script setup>
+<script setup lang="ts">
 const isMenuOpen = ref(false)
 </script>

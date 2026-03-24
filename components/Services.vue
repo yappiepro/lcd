@@ -34,7 +34,9 @@
           <div class="lg:col-span-3 grid md:grid-cols-3 gap-6 stagger-grid">
             <!-- Карточка 1 -->
             <div class="tilt-card bg-[#1a1a1a] rounded-xl p-6 transition-transform duration-300">
-              <div class="text-white text-lg mb-4 pb-4 border-b border-gray-700">Проектирование</div>
+              <div class="text-white text-lg mb-4 pb-4 border-b border-gray-700">
+                Проектирование
+              </div>
               <div class="flex items-baseline space-x-2">
                 <span class="text-7xl font-bold text-white counter-animate" data-end="5">0</span>
                 <span class="text-xl text-white">недель</span>
@@ -44,7 +46,9 @@
 
             <!-- Карточка 2 -->
             <div class="tilt-card bg-[#1a1a1a] rounded-xl p-6 transition-transform duration-300">
-              <div class="text-white text-lg mb-4 pb-4 border-b border-gray-700">Монтаж коробки дома</div>
+              <div class="text-white text-lg mb-4 pb-4 border-b border-gray-700">
+                Монтаж коробки дома
+              </div>
               <div class="flex items-baseline space-x-2">
                 <span class="text-7xl font-bold text-white counter-animate" data-end="30">0</span>
                 <span class="text-xl text-white">дней</span>
@@ -68,5 +72,4 @@
   </section>
 </template>
 
-<script setup>
-</script>
+<script setup lang="ts"></script>

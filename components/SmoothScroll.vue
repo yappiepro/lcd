@@ -2,12 +2,13 @@
   <slot />
 </template>
 
-<script setup>
+<script setup lang="ts">
 let lenis = null
 
 onMounted(async () => {
   // Check if mobile - don't initialize on mobile
-  const isMobile = window.innerWidth <= 768 || 'ontouchstart' in window || navigator.maxTouchPoints > 0
+  const isMobile =
+    window.innerWidth <= 768 || 'ontouchstart' in window || navigator.maxTouchPoints > 0
   if (isMobile) {
     return
   }
@@ -18,14 +19,14 @@ onMounted(async () => {
 
   lenis = new Lenis({
     duration: 1.2,
-    easing: (t) => Math.min(1, 1.001 - Math.pow(2, -10 * t)),
+    easing: t => Math.min(1, 1.001 - Math.pow(2, -10 * t)),
     direction: 'vertical',
     gestureDirection: 'vertical',
     smooth: true,
     mouseMultiplier: 1,
     smoothTouch: false,
     touchMultiplier: 2,
-    infinite: false,
+    infinite: false
   })
 
   function raf(time) {
@@ -47,7 +48,7 @@ onMounted(async () => {
         lenis.scrollTo(targetElement, {
           offset: 0,
           duration: 1.5,
-          easing: (t) => Math.min(1, 1.001 - Math.pow(2, -10 * t)),
+          easing: t => Math.min(1, 1.001 - Math.pow(2, -10 * t))
         })
       }
     })

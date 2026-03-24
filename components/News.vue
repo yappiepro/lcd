@@ -19,11 +19,13 @@
             <button
               v-for="(tab, index) in tabs"
               :key="index"
-              @click="activeTab = index"
               :class="[
                 'block text-left text-lg transition-colors',
-                activeTab === index ? 'text-gray-900 font-bold' : 'text-gray-300 hover:text-gray-500'
+                activeTab === index
+                  ? 'text-gray-900 font-bold'
+                  : 'text-gray-300 hover:text-gray-500'
               ]"
+              @click="activeTab = index"
             >
               {{ tab }}
             </button>
@@ -32,7 +34,11 @@
           <!-- 2 колонка - Фото с подписью -->
           <div class="space-y-4">
             <div class="aspect-square overflow-hidden rounded-2xl">
-              <img :src="newsItems[activeTab].image" alt="Проект" class="w-full h-full object-cover" />
+              <img
+                :src="newsItems[activeTab].image"
+                alt="Проект"
+                class="w-full h-full object-cover"
+              />
             </div>
             <p class="text-lg font-bold text-gray-900">{{ newsItems[activeTab].title }}</p>
           </div>
@@ -40,7 +46,8 @@
           <!-- 3 колонка - Текст описания -->
           <div>
             <p class="text-gray-400 text-lg leading-relaxed">
-              хроника наших достижений и актуальная информация о ходе работ. мы транслируем прогресс на строительных площадках.
+              хроника наших достижений и актуальная информация о ходе работ. мы транслируем прогресс
+              на строительных площадках.
             </p>
           </div>
 
@@ -74,7 +81,7 @@
   </section>
 </template>
 
-<script setup>
+<script setup lang="ts">
 const activeTab = ref(0)
 const tabs = ['Публикации', 'Новости', 'События']
 

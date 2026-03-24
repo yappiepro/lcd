@@ -7,7 +7,7 @@
           <div class="flex items-center justify-center">
             <span class="text-[80px] leading-none text-gray-400">[</span>
             <h2 class="text-5xl md:text-7xl font-bold text-gray-900 px-8 text-center">
-              СТОИМОСТЬ И<br/>УСЛУГИ
+              СТОИМОСТЬ И<br />УСЛУГИ
             </h2>
             <span class="text-[80px] leading-none text-gray-400">]</span>
           </div>
@@ -21,14 +21,16 @@
         <div class="grid lg:grid-cols-4 gap-8">
           <!-- Левая колонка - фильтры -->
           <div class="space-y-4">
-            <button 
-              v-for="(filter, index) in filters" 
+            <button
+              v-for="(filter, index) in filters"
               :key="index"
-              @click="activeFilter = index"
               :class="[
                 'block text-left text-lg py-2 transition-colors',
-                activeFilter === index ? 'text-gray-900 font-bold' : 'text-gray-400 hover:text-gray-600'
+                activeFilter === index
+                  ? 'text-gray-900 font-bold'
+                  : 'text-gray-400 hover:text-gray-600'
               ]"
+              @click="activeFilter = index"
             >
               {{ filter }}
             </button>
@@ -56,21 +58,29 @@
 
             <!-- Остальные услуги - сетка 3 колонки с раскрытием -->
             <div class="grid md:grid-cols-3 gap-6">
-              <div 
-                v-for="(service, index) in services" 
-                :key="index" 
+              <div
+                v-for="(service, index) in services"
+                :key="index"
                 class="pb-4 border-b border-gray-300 cursor-pointer"
                 @click="toggleService(index)"
               >
                 <div class="flex items-center justify-between">
                   <h3 class="text-base font-bold text-gray-900">{{ service.name }}</h3>
-                  <svg 
-                    :class="['w-4 h-4 text-gray-400 transition-transform', openService === index ? 'rotate-180' : '']"
-                    fill="none" 
-                    stroke="currentColor" 
+                  <svg
+                    :class="[
+                      'w-4 h-4 text-gray-400 transition-transform',
+                      openService === index ? 'rotate-180' : ''
+                    ]"
+                    fill="none"
+                    stroke="currentColor"
                     viewBox="0 0 24 24"
                   >
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M19 9l-7 7-7-7"
+                    />
                   </svg>
                 </div>
                 <div v-if="openService === index" class="mt-4 text-xs text-gray-600 space-y-2">
@@ -85,7 +95,7 @@
   </section>
 </template>
 
-<script setup>
+<script setup lang="ts">
 const activeFilter = ref(0)
 const openService = ref(null)
 
@@ -234,7 +244,7 @@ const services = [
   }
 ]
 
-const toggleService = (index) => {
+const toggleService = index => {
   openService.value = openService.value === index ? null : index
 }
 </script>

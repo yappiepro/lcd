@@ -22,8 +22,13 @@
   </div>
 </template>
 
-<script setup>
-import { useScrollAnimation, useTextReveal, useCounterAnimation, useTiltEffect } from '~/composables/useAnimations'
+<script setup lang="ts">
+import {
+  useScrollAnimation,
+  useTextReveal,
+  useCounterAnimation,
+  useTiltEffect
+} from '~/composables/useAnimations'
 
 onMounted(() => {
   const { initScrollAnimations } = useScrollAnimation()

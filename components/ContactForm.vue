@@ -7,7 +7,9 @@
           <div class="space-y-8">
             <h2 class="text-4xl md:text-5xl font-bold text-white">
               Взаимодействие с Нами как начало Пути
-              <div class="w-6 h-6 inline-block align-middle mx-2 rounded-full bg-orange-200 blur-sm"></div>
+              <div
+                class="w-6 h-6 inline-block align-middle mx-2 rounded-full bg-orange-200 blur-sm"
+              ></div>
             </h2>
 
             <div class="space-y-6">
@@ -21,20 +23,30 @@
 
             <!-- Навигация -->
             <div class="flex space-x-4">
-              <button 
-                @click="prevStep"
+              <button
                 class="w-12 h-12 rounded-full border-2 border-white/30 flex items-center justify-center text-white hover:bg-white/10 transition-colors"
+                @click="prevStep"
               >
                 <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7" />
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M15 19l-7-7 7-7"
+                  />
                 </svg>
               </button>
-              <button 
-                @click="nextStep"
+              <button
                 class="w-12 h-12 rounded-full border-2 border-white/30 flex items-center justify-center text-white hover:bg-white/10 transition-colors"
+                @click="nextStep"
               >
                 <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M9 5l7 7-7 7"
+                  />
                 </svg>
               </button>
             </div>
@@ -42,7 +54,11 @@
 
           <!-- Правая часть - фото -->
           <div>
-            <img :src="steps[activeStep].image" alt="Этап" class="rounded-2xl w-full h-[500px] object-cover" />
+            <img
+              :src="steps[activeStep].image"
+              alt="Этап"
+              class="rounded-2xl w-full h-[500px] object-cover"
+            />
           </div>
         </div>
 
@@ -50,22 +66,32 @@
         <div class="mt-20">
           <div class="relative">
             <!-- Линия -->
-            <div class="absolute top-[calc(50%-18px)] left-0 right-0 h-[2px] bg-gradient-to-r from-white via-gray-500 to-black transform -translate-y-1/2"></div>
-            
+            <div
+              class="absolute top-[calc(50%-18px)] left-0 right-0 h-[2px] bg-gradient-to-r from-white via-gray-500 to-black transform -translate-y-1/2"
+            ></div>
+
             <!-- Точки и подписи -->
             <div class="grid grid-cols-4 gap-4 relative z-10">
-              <div 
-                v-for="(step, index) in steps" 
+              <div
+                v-for="(step, index) in steps"
                 :key="index"
-                @click="activeStep = index"
                 class="text-center cursor-pointer"
+                @click="activeStep = index"
               >
                 <div class="w-4 h-4 rounded-full mx-auto mb-4 relative">
-                  <div 
-                    :class="['absolute inset-0 rounded-full transition-transform', activeStep === index ? 'bg-white scale-150' : 'bg-gray-700']"
+                  <div
+                    :class="[
+                      'absolute inset-0 rounded-full transition-transform',
+                      activeStep === index ? 'bg-white scale-150' : 'bg-gray-700'
+                    ]"
                   ></div>
                 </div>
-                <p :class="['text-sm', activeStep === index ? 'text-white font-bold' : 'text-gray-500']">
+                <p
+                  :class="[
+                    'text-sm',
+                    activeStep === index ? 'text-white font-bold' : 'text-gray-500'
+                  ]"
+                >
                   {{ step.stepName }}
                 </p>
               </div>
@@ -77,32 +103,36 @@
   </section>
 </template>
 
-<script setup>
+<script setup lang="ts">
 const activeStep = ref(0)
 
 const steps = [
   {
     stepName: 'Договор с клиентом',
     title: 'Договор: фундамент честных отношений',
-    description: 'Заключение договора становится тем самым фундаментом, на котором первоначальные идеи и эскизы обретают форму выверенного алгоритма действий. На этом этапе мы переводим архитектурные замыслы на язык точных расчетов, фиксируя финальную стоимость и график реализации проекта как незыблемые обязательства.',
+    description:
+      'Заключение договора становится тем самым фундаментом, на котором первоначальные идеи и эскизы обретают форму выверенного алгоритма действий. На этом этапе мы переводим архитектурные замыслы на язык точных расчетов, фиксируя финальную стоимость и график реализации проекта как незыблемые обязательства.',
     image: '/images/2_2.jpg'
   },
   {
     stepName: 'Фото отчеты о ходе выполнения работ',
     title: 'Прозрачность процесса',
-    description: 'Мы регулярно предоставляем фотоотчеты о ходе строительства. Вы всегда в курсе того, что происходит на вашем объекте, даже если находитесь за тысячи километров.',
+    description:
+      'Мы регулярно предоставляем фотоотчеты о ходе строительства. Вы всегда в курсе того, что происходит на вашем объекте, даже если находитесь за тысячи километров.',
     image: '/images/1_1.jpeg'
   },
   {
     stepName: 'Гарантия качества',
     title: 'Надёжность и гарантия',
-    description: 'Мы уверены в качестве наших работ и предоставляем полную гарантию на все выполненные работы и использованные материалы.',
+    description:
+      'Мы уверены в качестве наших работ и предоставляем полную гарантию на все выполненные работы и использованные материалы.',
     image: '/images/feater1.jpg'
   },
   {
     stepName: 'Всегда на связи',
     title: 'Поддержка 24/7',
-    description: 'Наши специалисты всегда на связи и готовы ответить на любые вопросы. Мы сопровождаем проект от идеи до сдачи и продолжаем поддерживать клиентов после завершения работ.',
+    description:
+      'Наши специалисты всегда на связи и готовы ответить на любые вопросы. Мы сопровождаем проект от идеи до сдачи и продолжаем поддерживать клиентов после завершения работ.',
     image: '/images/feater2.jpeg'
   }
 ]

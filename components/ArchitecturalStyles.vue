@@ -8,10 +8,12 @@
             <span class="text-6xl md:text-8xl font-light text-gray-900">[</span>
             <div class="text-center">
               <h2 class="text-5xl md:text-7xl lg:text-8xl font-bold text-gray-900 leading-tight">
-                СТИЛИ ДЛЯ<br/>ЖИЗНИ
+                СТИЛИ ДЛЯ<br />ЖИЗНИ
               </h2>
               <div class="flex items-center justify-center gap-2 mt-2">
-                <div class="w-16 h-16 inline-block align-middle rounded-full bg-orange-300 blur-md"></div>
+                <div
+                  class="w-16 h-16 inline-block align-middle rounded-full bg-orange-300 blur-md"
+                ></div>
                 <p class="text-gray-400 text-lg md:text-xl">в гармонии</p>
                 <p class="text-gray-900 text-lg md:text-xl font-medium">с природой</p>
               </div>
@@ -35,7 +37,11 @@
           <div class="grid lg:grid-cols-3 gap-4">
             <!-- Левая колонка - названия стилей -->
             <div class="flex flex-col">
-              <div v-for="(style, index) in styles" :key="index" class="style-item py-4 border-t border-gray-300 flex items-center">
+              <div
+                v-for="(style, index) in styles"
+                :key="index"
+                class="style-item py-4 border-t border-gray-300 flex items-center"
+              >
                 <h3 class="text-lg md:text-xl font-light text-gray-900">
                   <span class="text-xs md:text-sm text-gray-400 mr-2">{{ style.number }}</span>
                   {{ style.name }}
@@ -48,7 +54,11 @@
 
             <!-- Правая колонка - описания -->
             <div class="flex flex-col">
-              <div v-for="(style, index) in styles" :key="index" class="style-item py-4 border-t border-gray-300 flex items-center justify-end">
+              <div
+                v-for="(style, index) in styles"
+                :key="index"
+                class="style-item py-4 border-t border-gray-300 flex items-center justify-end"
+              >
                 <p class="text-gray-500 text-xs md:text-sm leading-relaxed text-right w-[80%]">
                   {{ style.description }}
                 </p>
@@ -64,37 +74,43 @@
   </section>
 </template>
 
-<script setup>
+<script setup lang="ts">
 const styles = [
   {
     number: '01',
     name: 'ХАЙ-ТЕК (HIGH-TECH)',
-    description: 'Индустриальный стиль, использующий стекло, металл, бетон. Характерны панорамное остекление, плоская кровля, строгие геометрические или бионические формы.'
+    description:
+      'Индустриальный стиль, использующий стекло, металл, бетон. Характерны панорамное остекление, плоская кровля, строгие геометрические или бионические формы.'
   },
   {
     number: '02',
     name: 'МИНИМАЛИЗМ',
-    description: 'Акцент на функциональность, простоту форм, открытые пространства и отсутствие лишнего декора.'
+    description:
+      'Акцент на функциональность, простоту форм, открытые пространства и отсутствие лишнего декора.'
   },
   {
     number: '03',
     name: 'СКАНДИНАВСКИЙ',
-    description: 'Экологичность, натуральные материалы (дерево), светлые тона, функциональность и большие окна.'
+    description:
+      'Экологичность, натуральные материалы (дерево), светлые тона, функциональность и большие окна.'
   },
   {
     number: '04',
     name: 'ШАЛЕ (CHALLET)',
-    description: 'Альпийский стиль с массивной крышей, каменным цоколем и деревянным верхним этажом.'
+    description:
+      'Альпийский стиль с массивной крышей, каменным цоколем и деревянным верхним этажом.'
   },
   {
     number: '05',
     name: 'СРЕДИЗЕМНОМОРСКИЙ',
-    description: 'Кикладский (белые дома) или итальянский (византийский) варианты, ориентированные на открытые террасы и свет.'
+    description:
+      'Кикладский (белые дома) или итальянский (византийский) варианты, ориентированные на открытые террасы и свет.'
   },
   {
     number: '06',
     name: 'СОВРЕМЕННЫЙ КОНСТРУКТИВИЗМ',
-    description: 'Рациональный подход, где каждый метр функционален, часто используется монолитная технология.'
+    description:
+      'Рациональный подход, где каждый метр функционален, часто используется монолитная технология.'
   }
 ]
 </script>

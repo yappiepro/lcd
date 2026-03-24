@@ -6,13 +6,7 @@
 
     <!-- Фоновое видео -->
     <div class="absolute inset-0 z-0 overflow-hidden">
-      <video
-        autoplay
-        muted
-        loop
-        playsinline
-        class="w-full h-full object-cover"
-      >
+      <video autoplay muted loop playsinline class="w-full h-full object-cover">
         <source src="/videos/hero-bg.webm" type="video/webm" />
         <!-- Заглушка если видео не загрузится -->
         <div class="bg-gray-300 flex items-center justify-center">
@@ -28,7 +22,9 @@
       <div class="max-w-[1600px] mx-auto">
         <div class="max-w-4xl mt-8 md:mt-20">
           <!-- Заголовок -->
-          <h1 class="text-reveal-target text-4xl md:text-6xl lg:text-7xl font-bold text-white leading-tight mb-4 md:mb-6">
+          <h1
+            class="text-reveal-target text-4xl md:text-6xl lg:text-7xl font-bold text-white leading-tight mb-4 md:mb-6"
+          >
             <span class="text-reveal-line">Строим дома из CLT</span>
             <span class="text-reveal-line">для жизни и бизнеса</span>
           </h1>
@@ -39,7 +35,9 @@
           </h2>
 
           <!-- Описание -->
-          <ul class="animate-on-scroll delay-100 space-y-2 md:space-y-3 text-white/80 text-sm md:text-base lg:text-lg mb-8 md:mb-10">
+          <ul
+            class="animate-on-scroll delay-100 space-y-2 md:space-y-3 text-white/80 text-sm md:text-base lg:text-lg mb-8 md:mb-10"
+          >
             <li>Профильная CLT компания</li>
             <li>Архитектура и реализация «под ключ»</li>
             <li>Авторское сопровождение проекта и надзор</li>
@@ -50,7 +48,7 @@
             href="#contact"
             class="magnetic-btn btn-liquid w-32 h-32 md:w-40 md:h-40 rounded-full bg-black flex flex-col items-start justify-center text-white font-medium hover:bg-gray-800 transition-colors pl-8 md:pl-10 pr-6 md:pr-8 py-6 md:py-8"
           >
-            <span class="text-left leading-tight text-sm md:text-lg">ЗАКАЗАТЬ<br/>ПРОЕКТ ↗</span>
+            <span class="text-left leading-tight text-sm md:text-lg">ЗАКАЗАТЬ<br />ПРОЕКТ ↗</span>
           </a>
         </div>
       </div>
@@ -60,12 +58,16 @@
     <div class="absolute bottom-10 left-1/2 transform -translate-x-1/2 z-20">
       <div class="flex flex-col items-center space-y-2 text-white/60 animate-bounce">
         <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 14l-7 7m0 0l-7-7m7 7V3" />
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            d="M19 14l-7 7m0 0l-7-7m7 7V3"
+          />
         </svg>
       </div>
     </div>
   </section>
 </template>
 
-<script setup>
-</script>
+<script setup lang="ts"></script>

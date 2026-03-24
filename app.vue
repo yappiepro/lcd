@@ -10,8 +10,15 @@
   </div>
 </template>
 
-<script setup>
-import { useScrollAnimation, useTextReveal, useCounterAnimation, useParallax, useTiltEffect } from '~/composables/useAnimations'
+<script setup lang="ts">
+import { onMounted } from 'vue'
+import {
+  useScrollAnimation,
+  useTextReveal,
+  useCounterAnimation,
+  useParallax,
+  useTiltEffect
+} from '~/composables/useAnimations'
 
 if (import.meta.client) {
   onMounted(() => {
