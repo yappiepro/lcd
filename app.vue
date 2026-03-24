@@ -14,18 +14,20 @@
 <script setup>
 import { useScrollAnimation, useTextReveal, useCounterAnimation, useParallax, useTiltEffect } from '~/composables/useAnimations'
 
-onMounted(() => {
-  const { initScrollAnimations } = useScrollAnimation()
-  const { initTextReveal } = useTextReveal()
-  const { initCounters } = useCounterAnimation()
-  const { initParallax } = useParallax()
-  const { initTilt } = useTiltEffect()
+if (import.meta.client) {
+  onMounted(() => {
+    const { initScrollAnimations } = useScrollAnimation()
+    const { initTextReveal } = useTextReveal()
+    const { initCounters } = useCounterAnimation()
+    const { initParallax } = useParallax()
+    const { initTilt } = useTiltEffect()
 
-  // Initialize all animations
-  initScrollAnimations()
-  initTextReveal()
-  initCounters()
-  initParallax()
-  initTilt()
-})
+    // Initialize all animations
+    initScrollAnimations()
+    initTextReveal()
+    initCounters()
+    initParallax()
+    initTilt()
+  })
+}
 </script>
