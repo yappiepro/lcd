@@ -24,9 +24,9 @@
     </div>
 
     <!-- Основной контент -->
-    <div class="relative z-10 flex-1 w-full px-8 md:px-12 lg:px-16 py-12 md:py-20">
+    <div class="relative z-10 flex-1 w-full px-8 md:px-12 lg:px-16 py-8 md:py-20">
       <div class="max-w-[1600px] mx-auto">
-        <div class="max-w-4xl mt-16 md:mt-32">
+        <div class="max-w-4xl mt-8 md:mt-20">
           <!-- Заголовок -->
           <h1 class="text-reveal-target text-4xl md:text-6xl lg:text-7xl font-bold text-white leading-tight mb-4 md:mb-6">
             <span class="text-reveal-line">Строим дома из CLT</span>
@@ -45,10 +45,10 @@
             <li>Авторское сопровождение проекта и надзор</li>
           </ul>
 
-          <!-- Кнопка -->
+          <!-- Кнопка - видна сразу без анимации -->
           <a
             href="#contact"
-            class="animate-on-scroll delay-200 magnetic-btn btn-liquid w-24 h-24 md:w-28 md:h-28 rounded-full bg-black flex flex-col items-center justify-center text-white font-medium hover:bg-gray-800 transition-colors px-4 py-2 md:px-5 md:py-3"
+            class="magnetic-btn btn-liquid w-24 h-24 md:w-28 md:h-28 rounded-full bg-black flex flex-col items-center justify-center text-white font-medium hover:bg-gray-800 transition-colors px-4 py-2 md:px-5 md:py-3"
           >
             <svg class="w-5 h-5 md:w-6 md:h-6 transform -rotate-45 mb-1 md:mb-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2.5">
               <path stroke-linecap="round" stroke-linejoin="round" d="M17 8l4 4m0 0l-4 4m4-4H3" />
