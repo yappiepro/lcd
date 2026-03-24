@@ -3,20 +3,24 @@
 </template>
 
 <script setup>
-import Lenis from 'lenis'
-
 let lenis = null
+let Lenis = null
 
 // Check if mobile
-const isMobile = () => {
-  return window.innerWidth <= 768 || 'ontouchstart' in window || navigator.maxTouchPoints > 0
-}
+const isMobile = ref(false)
 
-onMounted(() => {
+onMounted(async () => {
+  // Check if mobile
+  isMobile.value = window.innerWidth <= 768 || 'ontouchstart' in window || navigator.maxTouchPoints > 0
+
   // Don't initialize Lenis on mobile - use native scroll
-  if (isMobile()) {
+  if (isMobile.value) {
     return
   }
+
+  // Dynamic import to avoid SSR issues
+  const lenisModule = await import('lenis')
+  Lenis = lenisModule.default
 
   lenis = new Lenis({
     duration: 1.2,
