@@ -29,7 +29,8 @@
         <div class="max-w-4xl mt-32">
           <!-- Заголовок -->
           <h1 class="text-reveal-target text-4xl md:text-6xl lg:text-7xl font-bold text-white leading-tight mb-6">
-            Строим дома из CLT<br />для жизни и бизнеса
+            <span class="text-reveal-line">Строим дома из CLT</span>
+            <span class="text-reveal-line">для жизни и бизнеса</span>
           </h1>
 
           <!-- Подзаголовок -->

@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div v-if="!isMobile()">
     <div class="custom-cursor" ref="cursor"></div>
     <div class="custom-cursor-dot" ref="cursorDot"></div>
   </div>
@@ -9,13 +9,24 @@
 const cursor = ref(null)
 const cursorDot = ref(null)
 
+// Check if device is mobile (available at component level for template)
+const isMobile = ref(false)
+
 let mouseX = 0, mouseY = 0
 let cursorX = 0, cursorY = 0
 let dotX = 0, dotY = 0
 
-const magneticElements = ref([])
+let animationFrameId = null
 
 onMounted(() => {
+  // Check if mobile
+  isMobile.value = window.innerWidth <= 768 || 'ontouchstart' in window || navigator.maxTouchPoints > 0
+
+  // Don't initialize on mobile
+  if (isMobile.value) {
+    return
+  }
+
   // Track mouse
   document.addEventListener('mousemove', (e) => {
     mouseX = e.clientX
@@ -27,7 +38,7 @@ onMounted(() => {
     // Smooth cursor follow
     cursorX += (mouseX - cursorX) * 0.15
     cursorY += (mouseY - cursorY) * 0.15
-    
+
     dotX = mouseX
     dotY = mouseY
 
@@ -41,20 +52,20 @@ onMounted(() => {
       cursorDot.value.style.top = dotY + 'px'
     }
 
-    requestAnimationFrame(animate)
+    animationFrameId = requestAnimationFrame(animate)
   }
   animate()
 
   // Magnetic effect for buttons and links
   const magneticBtns = document.querySelectorAll('a, button, .magnetic-btn')
-  
+
   magneticBtns.forEach(btn => {
     btn.addEventListener('mouseenter', () => {
       if (cursor.value) {
         cursor.value.classList.add('hovered')
       }
     })
-    
+
     btn.addEventListener('mouseleave', () => {
       if (cursor.value) {
         cursor.value.classList.remove('hovered')
@@ -87,6 +98,12 @@ onMounted(() => {
 
     setTimeout(() => ripple.remove(), 600)
   })
+})
+
+onUnmounted(() => {
+  if (animationFrameId) {
+    cancelAnimationFrame(animationFrameId)
+  }
 })
 </script>
 

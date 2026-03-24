@@ -78,7 +78,7 @@
           </div>
 
           <!-- Правая часть - большое фото -->
-          <div class="animate-on-scroll delay-200 tilt-container">
+          <div class="animate-on-scroll delay-200 tilt-container projects-right-part">
             <div class="tilt-element overflow-hidden rounded-2xl">
               <img :src="projects[activeProject].image" alt="Проект" class="w-full h-[500px] object-cover transition-transform duration-700 hover:scale-105" />
             </div>

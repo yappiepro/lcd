@@ -14,7 +14,7 @@ export default defineNuxtConfig({
       ]
     }
   },
-  css: ['~/assets/css/animations.css'],
+  css: ['~/assets/css/animations.css', '~/assets/css/mobile.css'],
   nitro: {
     preset: 'static'
   },

@@ -7,7 +7,17 @@ import Lenis from '@studio-freight/lenis'
 
 let lenis = null
 
+// Check if mobile
+const isMobile = () => {
+  return window.innerWidth <= 768 || 'ontouchstart' in window || navigator.maxTouchPoints > 0
+}
+
 onMounted(() => {
+  // Don't initialize Lenis on mobile - use native scroll
+  if (isMobile()) {
+    return
+  }
+
   lenis = new Lenis({
     duration: 1.2,
     easing: (t) => Math.min(1, 1.001 - Math.pow(2, -10 * t)),
@@ -33,7 +43,7 @@ onMounted(() => {
       e.preventDefault()
       const targetId = this.getAttribute('href')
       if (targetId === '#') return
-      
+
       const targetElement = document.querySelector(targetId)
       if (targetElement) {
         lenis.scrollTo(targetElement, {

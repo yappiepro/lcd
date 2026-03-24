@@ -4,8 +4,8 @@
       <div class="max-w-[1600px] mx-auto">
         <div class="relative">
           <!-- Большое фото -->
-          <div class="relative">
-            <img src="/images/feater1.jpg" alt="Команда" class="w-full h-[600px] object-cover rounded-2xl" />
+          <div class="relative team-photo-container">
+            <img src="/images/feater1.jpg" alt="Команда" class="team-photo w-full h-[600px] object-cover rounded-2xl" />
 
             <!-- Подпись слева вверху -->
             <div class="absolute top-8 left-8 text-gray-900 bg-white/80 p-4 rounded-lg">

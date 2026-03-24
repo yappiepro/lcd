@@ -13,7 +13,7 @@
         <div class="relative">
           <!-- Изображение -->
           <div class="overflow-hidden rounded-2xl">
-            <img :src="images[currentSlide]" alt="Проект" class="w-full h-[600px] object-cover" />
+            <img :src="images[currentSlide]" alt="Проект" class="gallery-image w-full h-[600px] object-cover" />
           </div>
 
           <!-- Кнопка влево -->

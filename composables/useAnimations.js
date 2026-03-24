@@ -52,33 +52,72 @@ export function useScrollAnimation() {
 export function useTextReveal() {
   const initTextReveal = () => {
     const headings = document.querySelectorAll('.text-reveal-target')
-    
-    headings.forEach((heading) => {
-      const text = heading.textContent
-      heading.innerHTML = ''
-      
-      text.split('').forEach((char) => {
-        const span = document.createElement('span')
-        span.textContent = char === ' ' ? '\u00A0' : char
-        span.classList.add('char')
-        heading.appendChild(span)
-      })
 
-      ScrollTrigger.create({
-        trigger: heading,
-        start: 'top 85%',
-        once: true,
-        onEnter: () => {
-          heading.classList.add('animated')
-          const chars = heading.querySelectorAll('.char')
-          chars.forEach((char, i) => {
-            setTimeout(() => {
-              char.style.opacity = '1'
-              char.style.transform = 'translateY(0)'
-            }, i * 30)
+    headings.forEach((heading) => {
+      // Check if heading has text-reveal-line children
+      const lines = heading.querySelectorAll('.text-reveal-line')
+
+      if (lines.length > 0) {
+        // Handle multi-line headings
+        lines.forEach((line) => {
+          const text = line.textContent
+          line.innerHTML = ''
+
+          text.split('').forEach((char) => {
+            const span = document.createElement('span')
+            span.textContent = char === ' ' ? '\u00A0' : char
+            span.classList.add('char')
+            span.style.opacity = '0'
+            span.style.transform = 'translateY(100%)'
+            span.style.display = 'inline-block'
+            line.appendChild(span)
           })
-        }
-      })
+        })
+
+        ScrollTrigger.create({
+          trigger: heading,
+          start: 'top 85%',
+          once: true,
+          onEnter: () => {
+            lines.forEach((line, lineIndex) => {
+              const chars = line.querySelectorAll('.char')
+              chars.forEach((char, i) => {
+                setTimeout(() => {
+                  char.style.opacity = '1'
+                  char.style.transform = 'translateY(0)'
+                }, i * 30 + (lineIndex * 300))
+              })
+            })
+          }
+        })
+      } else {
+        // Handle single-line headings (original behavior)
+        const text = heading.textContent
+        heading.innerHTML = ''
+
+        text.split('').forEach((char) => {
+          const span = document.createElement('span')
+          span.textContent = char === ' ' ? '\u00A0' : char
+          span.classList.add('char')
+          heading.appendChild(span)
+        })
+
+        ScrollTrigger.create({
+          trigger: heading,
+          start: 'top 85%',
+          once: true,
+          onEnter: () => {
+            heading.classList.add('animated')
+            const chars = heading.querySelectorAll('.char')
+            chars.forEach((char, i) => {
+              setTimeout(() => {
+                char.style.opacity = '1'
+                char.style.transform = 'translateY(0)'
+              }, i * 30)
+            })
+          }
+        })
+      }
     })
   }
 
