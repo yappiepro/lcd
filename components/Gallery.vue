@@ -20,7 +20,7 @@
 
           <!-- Кнопка влево -->
           <button
-            class="absolute left-2 md:left-4 top-1/2 -translate-y-1/2 w-12 h-12 md:w-14 md:h-14 rounded-full border-2 border-white/50 flex items-center justify-center text-white hover:bg-white/10 transition-colors z-10"
+            class="gallery-nav-btn absolute left-2 md:left-4 top-1/2 -translate-y-1/2 w-12 h-12 md:w-14 md:h-14 rounded-full border-2 border-white/50 flex items-center justify-center text-white hover:bg-white/10 transition-colors z-10"
             @click="prevSlide"
           >
             <svg
@@ -40,7 +40,7 @@
 
           <!-- Кнопка вправо -->
           <button
-            class="absolute right-2 md:right-4 top-1/2 -translate-y-1/2 w-12 h-12 md:w-14 md:h-14 rounded-full border-2 border-white/50 flex items-center justify-center text-white hover:bg-white/10 transition-colors z-10"
+            class="gallery-nav-btn absolute right-2 md:right-4 top-1/2 -translate-y-1/2 w-12 h-12 md:w-14 md:h-14 rounded-full border-2 border-white/50 flex items-center justify-center text-white hover:bg-white/10 transition-colors z-10"
             @click="nextSlide"
           >
             <svg

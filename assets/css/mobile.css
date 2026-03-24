@@ -125,7 +125,7 @@
     object-fit: cover;
   }
 
-  #gallery .w-12,
+  #gallery .gallery-nav-btn,
   #gallery .md\:w-14 {
     width: 3rem !important;
     height: 3rem !important;
