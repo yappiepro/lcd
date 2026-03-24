@@ -46,7 +46,7 @@
           <!-- Кнопка - видна сразу без анимации -->
           <a
             href="#contact"
-            class="magnetic-btn btn-liquid w-40 h-40 md:w-48 md:h-48 lg:w-56 lg:h-56 rounded-full bg-black flex flex-col items-start justify-center text-white font-medium hover:bg-gray-800 transition-colors pl-10 md:pl-12 lg:pl-14 pr-8 md:pr-10 lg:pr-12 py-8 md:py-10 lg:py-12"
+            class="magnetic-btn btn-liquid w-40 h-40 md:w-48 md:h-48 lg:w-56 lg:h-56 rounded-full bg-black flex flex-col items-start justify-center text-white font-medium hover:bg-gray-800 transition-colors pl-10 md:pl-12 lg:pl-14 pr-8 md:pr-10 lg:pr-12 py-8 md:py-10 lg:py-12 mt-8 md:mt-10 lg:mt-12"
           >
             <span class="text-left leading-tight text-base md:text-lg lg:text-xl"
               >ЗАКАЗАТЬ<br />ПРОЕКТ ↗</span
