@@ -24,22 +24,22 @@
     </div>
 
     <!-- Основной контент -->
-    <div class="relative z-10 flex-1 w-full px-8 md:px-12 lg:px-16 py-20">
+    <div class="relative z-10 flex-1 w-full px-8 md:px-12 lg:px-16 py-12 md:py-20">
       <div class="max-w-[1600px] mx-auto">
-        <div class="max-w-4xl mt-32">
+        <div class="max-w-4xl mt-16 md:mt-32">
           <!-- Заголовок -->
-          <h1 class="text-reveal-target text-4xl md:text-6xl lg:text-7xl font-bold text-white leading-tight mb-6">
+          <h1 class="text-reveal-target text-4xl md:text-6xl lg:text-7xl font-bold text-white leading-tight mb-4 md:mb-6">
             <span class="text-reveal-line">Строим дома из CLT</span>
             <span class="text-reveal-line">для жизни и бизнеса</span>
           </h1>
 
           <!-- Подзаголовок -->
-          <h2 class="animate-on-scroll text-xl md:text-2xl text-white/90 font-light mb-8">
+          <h2 class="animate-on-scroll text-xl md:text-2xl text-white/90 font-light mb-6 md:mb-8">
             Индивидуальный подход к строительству
           </h2>
 
           <!-- Описание -->
-          <ul class="animate-on-scroll delay-100 space-y-3 text-white/80 text-base md:text-lg mb-10">
+          <ul class="animate-on-scroll delay-100 space-y-2 md:space-y-3 text-white/80 text-sm md:text-base lg:text-lg mb-8 md:mb-10">
             <li>Профильная CLT компания</li>
             <li>Архитектура и реализация «под ключ»</li>
             <li>Авторское сопровождение проекта и надзор</li>
@@ -48,12 +48,12 @@
           <!-- Кнопка -->
           <a
             href="#contact"
-            class="animate-on-scroll delay-200 magnetic-btn btn-liquid w-28 h-28 rounded-full bg-black flex flex-col items-center justify-center text-white font-medium hover:bg-gray-800 transition-colors px-5 py-3"
+            class="animate-on-scroll delay-200 magnetic-btn btn-liquid w-24 h-24 md:w-28 md:h-28 rounded-full bg-black flex flex-col items-center justify-center text-white font-medium hover:bg-gray-800 transition-colors px-4 py-2 md:px-5 md:py-3"
           >
-            <svg class="w-6 h-6 transform -rotate-45 mb-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2.5">
+            <svg class="w-5 h-5 md:w-6 md:h-6 transform -rotate-45 mb-1 md:mb-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2.5">
               <path stroke-linecap="round" stroke-linejoin="round" d="M17 8l4 4m0 0l-4 4m4-4H3" />
             </svg>
-            <span class="text-left leading-tight">ЗАКАЗАТЬ<br/>ПРОЕКТ</span>
+            <span class="text-left leading-tight text-xs md:text-base">ЗАКАЗАТЬ<br/>ПРОЕКТ</span>
           </a>
         </div>
       </div>
