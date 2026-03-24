@@ -26,9 +26,9 @@
               </h2>
               <!-- Кнопка -->
               <div class="relative">
-                <a 
-                  href="#" 
-                  class="w-32 h-32 rounded-full bg-black border border-white/20 flex flex-col items-center justify-center text-white text-base hover:bg-gray-900 transition-colors px-6 py-4"
+                <a
+                  href="#"
+                  class="w-32 h-32 rounded-full bg-black border border-white/20 flex flex-col items-start justify-center text-white text-base hover:bg-gray-900 transition-colors pl-8"
                 >
                   <svg class="w-6 h-6 transform -rotate-45 mb-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2.5">
                     <path stroke-linecap="round" stroke-linejoin="round" d="M17 8l4 4m0 0l-4 4m4-4H3" />

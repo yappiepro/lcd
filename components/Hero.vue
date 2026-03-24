@@ -48,7 +48,7 @@
           <!-- Кнопка - видна сразу без анимации -->
           <a
             href="#contact"
-            class="magnetic-btn btn-liquid w-24 h-24 md:w-28 md:h-28 rounded-full bg-black flex flex-col items-center justify-center text-white font-medium hover:bg-gray-800 transition-colors px-4 py-2 md:px-5 md:py-3"
+            class="magnetic-btn btn-liquid w-24 h-24 md:w-28 md:h-28 rounded-full bg-black flex flex-col items-start justify-center text-white font-medium hover:bg-gray-800 transition-colors pl-6 md:pl-8"
           >
             <svg class="w-5 h-5 md:w-6 md:h-6 transform -rotate-45 mb-1 md:mb-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2.5">
               <path stroke-linecap="round" stroke-linejoin="round" d="M17 8l4 4m0 0l-4 4m4-4H3" />
