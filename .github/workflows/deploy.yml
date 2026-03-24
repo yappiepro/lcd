@@ -32,6 +32,8 @@ jobs:
 
       - name: Build (SSG)
         run: npm run generate
+        env:
+          NUXT_APP_BASE_URL: /lcd/
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
