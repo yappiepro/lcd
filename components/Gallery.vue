@@ -8,22 +8,27 @@
         </div>
 
         <!-- Слайдер на всю ширину -->
-        <div class="relative -mx-8 md:-mx-12 lg:-mx-16">
+        <div class="relative">
           <!-- Изображение -->
-          <div class="overflow-hidden">
+          <div class="overflow-hidden rounded-2xl">
             <img
               :src="images[currentSlide]"
               alt="Проект"
-              class="gallery-image w-full h-[600px] object-cover"
+              class="gallery-image w-full h-[300px] md:h-[500px] lg:h-[600px] object-cover"
             />
           </div>
 
           <!-- Кнопка влево -->
           <button
-            class="absolute left-4 top-1/2 -translate-y-1/2 w-12 h-12 rounded-full border-2 border-white/50 flex items-center justify-center text-white hover:bg-white/10 transition-colors z-10"
+            class="absolute left-2 md:left-4 top-1/2 -translate-y-1/2 w-12 h-12 md:w-14 md:h-14 rounded-full border-2 border-white/50 flex items-center justify-center text-white hover:bg-white/10 transition-colors z-10"
             @click="prevSlide"
           >
-            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <svg
+              class="w-6 h-6 md:w-7 md:h-7"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+            >
               <path
                 stroke-linecap="round"
                 stroke-linejoin="round"
@@ -35,10 +40,15 @@
 
           <!-- Кнопка вправо -->
           <button
-            class="absolute right-4 top-1/2 -translate-y-1/2 w-12 h-12 rounded-full border-2 border-white/50 flex items-center justify-center text-white hover:bg-white/10 transition-colors z-10"
+            class="absolute right-2 md:right-4 top-1/2 -translate-y-1/2 w-12 h-12 md:w-14 md:h-14 rounded-full border-2 border-white/50 flex items-center justify-center text-white hover:bg-white/10 transition-colors z-10"
             @click="nextSlide"
           >
-            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <svg
+              class="w-6 h-6 md:w-7 md:h-7"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+            >
               <path
                 stroke-linecap="round"
                 stroke-linejoin="round"

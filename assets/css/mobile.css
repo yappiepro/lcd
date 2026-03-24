@@ -3,6 +3,91 @@
    ============================================ */
 @media (max-width: 768px) {
   /* ==========================================
+     GENERAL LAYOUT
+     ========================================== */
+  .px-8, .px-12, .px-16 {
+    padding-left: 1rem !important;
+    padding-right: 1rem !important;
+  }
+
+  .py-20 {
+    padding-top: 2rem !important;
+    padding-bottom: 2rem !important;
+  }
+
+  .gap-8, .gap-12 {
+    gap: 1rem !important;
+  }
+
+  /* ==========================================
+     TYPOGRAPHY
+     ========================================== */
+  h1 {
+    font-size: 1.75rem !important;
+    line-height: 1.2 !important;
+  }
+
+  h2 {
+    font-size: 1.5rem !important;
+    line-height: 1.3 !important;
+  }
+
+  h3 {
+    font-size: 1.125rem !important;
+    line-height: 1.4 !important;
+  }
+
+  p {
+    font-size: 0.9375rem !important;
+    line-height: 1.6 !important;
+  }
+
+  /* ==========================================
+     BUTTONS - Touch-friendly (min 44px)
+     ========================================== */
+  .magnetic-btn {
+    min-width: 44px !important;
+    min-height: 44px !important;
+  }
+
+  /* Remove magnetic effect on mobile */
+  .magnetic-btn:hover {
+    transform: none !important;
+  }
+
+  /* ==========================================
+     CARDS - Remove tilt effect
+     ========================================== */
+  .tilt-card {
+    transform: none !important;
+    transition: box-shadow 0.3s ease !important;
+  }
+
+  .tilt-card:hover {
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+  }
+
+  /* ==========================================
+     GRID LAYOUTS - Single column
+     ========================================== */
+  .grid-cols-2,
+  .grid-cols-3,
+  .grid-cols-4,
+  .md\:grid-cols-3,
+  .lg\:grid-cols-2,
+  .lg\:grid-cols-4 {
+    grid-template-columns: 1fr !important;
+  }
+
+  /* ==========================================
+     IMAGES - Responsive
+     ========================================== */
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+
+  /* ==========================================
      HERO SECTION
      ========================================== */
   .hero-section {
@@ -10,7 +95,7 @@
   }
 
   .hero-section h1 {
-    font-size: 2rem !important;
+    font-size: 1.75rem !important;
     line-height: 1.2 !important;
   }
 
@@ -23,8 +108,13 @@
   }
 
   .hero-section .magnetic-btn {
-    width: 4rem !important;
-    height: 4rem !important;
+    width: 5rem !important;
+    height: 5rem !important;
+  }
+
+  /* Disable gradient orbs on mobile */
+  .gradient-orb {
+    display: none;
   }
 
   /* ==========================================
@@ -35,9 +125,10 @@
     object-fit: cover;
   }
 
-  #gallery .w-12 {
-    width: 2.5rem !important;
-    height: 2.5rem !important;
+  #gallery .w-12,
+  #gallery .md\:w-14 {
+    width: 3rem !important;
+    height: 3rem !important;
   }
 
   /* ==========================================
@@ -58,12 +149,12 @@
 
   #projects .w-64 {
     width: 100% !important;
-    max-width: 280px;
   }
 
-  #projects .magnetic-btn.w-32 {
-    width: 4rem !important;
-    height: 4rem !important;
+  #projects .magnetic-btn.w-32,
+  #projects .w-28 {
+    width: 5rem !important;
+    height: 5rem !important;
   }
 
   .projects-right-part img {
@@ -78,7 +169,7 @@
   }
 
   #services .text-7xl {
-    font-size: 3rem !important;
+    font-size: 2.5rem !important;
   }
 
   #services .text-xl {
@@ -90,28 +181,31 @@
   }
 
   /* ==========================================
-     STYLES SECTION
+     STYLES / ARCHITECTURAL SECTION
      ========================================== */
-  #styles h2 {
-    font-size: 1.75rem !important;
+  #styles h2,
+  .architectural-styles h2 {
+    font-size: 1.5rem !important;
     line-height: 1.3 !important;
   }
 
-  #styles p {
+  #styles p,
+  .architectural-styles p {
     font-size: 0.875rem !important;
     line-height: 1.5 !important;
   }
 
-  #styles img {
-    max-width: 100% !important;
-    height: auto !important;
+  /* Hide decorative brackets on mobile */
+  #styles .text-6xl,
+  .architectural-styles .text-6xl {
+    display: none !important;
   }
 
   /* ==========================================
      MAKKO SECTION
      ========================================== */
   #makko h2 {
-    font-size: 2.5rem !important;
+    font-size: 2rem !important;
     line-height: 1.2 !important;
   }
 
@@ -125,10 +219,10 @@
     height: auto !important;
   }
 
-  #makko .magnetic-btn.w-32 {
-    width: 3.5rem !important;
-    height: 3.5rem !important;
-    font-size: 0.75rem !important;
+  #makko .magnetic-btn.w-32,
+  #makko .w-24 {
+    width: 4rem !important;
+    height: 4rem !important;
   }
 
   .makko-helicopter-image {
@@ -206,121 +300,18 @@
   }
 
   /* ==========================================
-     FORMS
+     FORMS - Prevent zoom on iOS
      ========================================== */
   input, textarea, select {
-    font-size: 16px !important; /* Prevent zoom on iOS */
+    font-size: 16px !important;
   }
 
   /* ==========================================
-     GENERAL TYPOGRAPHY
-     ========================================== */
-  h1 {
-    font-size: 2rem !important;
-    line-height: 1.2 !important;
-  }
-
-  h2 {
-    font-size: 1.5rem !important;
-    line-height: 1.3 !important;
-  }
-
-  h3 {
-    font-size: 1.25rem !important;
-    line-height: 1.4 !important;
-  }
-
-  p {
-    font-size: 0.9375rem !important;
-    line-height: 1.6 !important;
-  }
-
-  /* ==========================================
-     LAYOUT FIXES
-     ========================================== */
-  .px-8, .px-12, .px-16 {
-    padding-left: 1rem !important;
-    padding-right: 1rem !important;
-  }
-
-  .py-20 {
-    padding-top: 3rem !important;
-    padding-bottom: 3rem !important;
-  }
-
-  .gap-8, .gap-12 {
-    gap: 1.5rem !important;
-  }
-
-  .grid-cols-2,
-  .grid-cols-3,
-  .grid-cols-4 {
-    grid-template-columns: 1fr !important;
-  }
-
-  .md\:grid-cols-3 {
-    grid-template-columns: 1fr !important;
-  }
-
-  .lg\:grid-cols-2,
-  .lg\:grid-cols-4 {
-    grid-template-columns: 1fr !important;
-  }
-
-  .flex-col-reverse {
-    flex-direction: column-reverse;
-  }
-
-  /* Stack elements vertically on mobile */
-  .items-stretch {
-    align-items: stretch !important;
-  }
-
-  /* ==========================================
-     BUTTONS
-     ========================================== */
-  .magnetic-btn {
-    transition: transform 0.2s ease !important;
-  }
-
-  /* Remove magnetic effect on mobile */
-  .magnetic-btn:hover {
-    transform: none !important;
-  }
-
-  /* ==========================================
-     CARDS
-     ========================================== */
-  .tilt-card {
-    transform: none !important;
-    transition: box-shadow 0.3s ease !important;
-  }
-
-  .tilt-card:hover {
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
-  }
-
-  /* ==========================================
-     IMAGES - GLOBAL
-     ========================================== */
-  img {
-    max-width: 100%;
-    height: auto;
-  }
-
-  /* ==========================================
-     ANIMATIONS - REDUCED MOTION
+     ANIMATIONS - Reduced motion
      ========================================== */
   .animate-on-scroll {
     transition: opacity 0.5s ease !important;
     transform: translateY(30px) !important;
-  }
-
-  /* ==========================================
-     GRADIENT ORBS - DISABLE ON MOBILE
-     ========================================== */
-  .gradient-orb {
-    display: none;
   }
 }
 
@@ -329,7 +320,7 @@
    ============================================ */
 @media (max-width: 480px) {
   h1 {
-    font-size: 1.75rem !important;
+    font-size: 1.5rem !important;
   }
 
   h2 {
@@ -341,11 +332,13 @@
   }
 
   #makko h2 {
-    font-size: 2rem !important;
+    font-size: 1.75rem !important;
   }
 
-  .magnetic-btn.w-32 {
-    width: 3rem !important;
-    height: 3rem !important;
+  .magnetic-btn.w-32,
+  .magnetic-btn.w-28,
+  .magnetic-btn.w-24 {
+    width: 3.5rem !important;
+    height: 3.5rem !important;
   }
 }

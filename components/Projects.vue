@@ -35,10 +35,15 @@
             <!-- Навигация стрелки -->
             <div class="flex space-x-4 mb-8">
               <button
-                class="magnetic-btn w-10 h-10 flex items-center justify-center text-gray-400 hover:text-gray-900 transition-colors"
+                class="magnetic-btn w-12 h-12 md:w-14 md:h-14 flex items-center justify-center text-gray-400 hover:text-gray-900 transition-colors"
                 @click="prevProject"
               >
-                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <svg
+                  class="w-6 h-6 md:w-7 md:h-7"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                >
                   <path
                     stroke-linecap="round"
                     stroke-linejoin="round"
@@ -48,10 +53,15 @@
                 </svg>
               </button>
               <button
-                class="magnetic-btn w-10 h-10 flex items-center justify-center text-gray-400 hover:text-gray-900 transition-colors"
+                class="magnetic-btn w-12 h-12 md:w-14 md:h-14 flex items-center justify-center text-gray-400 hover:text-gray-900 transition-colors"
                 @click="nextProject"
               >
-                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <svg
+                  class="w-6 h-6 md:w-7 md:h-7"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                >
                   <path
                     stroke-linecap="round"
                     stroke-linejoin="round"
@@ -73,19 +83,21 @@
             </p>
 
             <!-- Миниатюра и кнопка -->
-            <div class="animate-on-scroll delay-200 flex items-end space-x-6">
+            <div
+              class="animate-on-scroll delay-200 flex flex-col md:flex-row items-start md:items-end space-y-4 md:space-y-0 md:space-x-6"
+            >
               <div class="tilt-card overflow-hidden rounded-xl">
                 <img
                   :src="projects[activeProject].thumb"
                   alt="Проект"
-                  class="w-64 h-40 object-cover transition-transform duration-500 hover:scale-110"
+                  class="w-full md:w-64 h-40 object-cover transition-transform duration-500 hover:scale-110"
                 />
               </div>
               <a
                 href="#contact"
-                class="magnetic-btn btn-liquid w-32 h-32 md:w-40 md:h-40 rounded-full bg-black flex flex-col items-start justify-center text-white font-medium hover:bg-gray-800 transition-colors pl-8 md:pl-10 pr-6 md:pr-8 py-6 md:py-8"
+                class="magnetic-btn btn-liquid w-28 h-28 md:w-32 md:h-32 lg:w-40 lg:h-40 rounded-full bg-black flex flex-col items-start justify-center text-white font-medium hover:bg-gray-800 transition-colors pl-6 md:pl-8 lg:pl-10 pr-4 md:pr-6 lg:pr-8 py-4 md:py-6 lg:py-8 flex-shrink-0"
               >
-                <span class="text-left leading-tight text-sm md:text-lg"
+                <span class="text-left leading-tight text-xs md:text-sm lg:text-lg"
                   >посмотреть<br />проекты ↗</span
                 >
               </a>
@@ -98,7 +110,7 @@
               <img
                 :src="projects[activeProject].image"
                 alt="Проект"
-                class="w-full h-[500px] object-cover transition-transform duration-700 hover:scale-105"
+                class="w-full h-[300px] md:h-[400px] lg:h-[500px] object-cover transition-transform duration-700 hover:scale-105"
               />
             </div>
           </div>
