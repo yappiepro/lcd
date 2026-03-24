@@ -20,23 +20,23 @@
     <!-- Основной контент -->
     <div class="relative z-10 flex-1 w-full px-8 md:px-12 lg:px-16 py-8 md:py-20">
       <div class="max-w-[1600px] mx-auto">
-        <div class="max-w-4xl mt-8 md:mt-20">
+        <div class="max-w-4xl mt-24 md:mt-32 lg:mt-40">
           <!-- Заголовок -->
           <h1
-            class="text-reveal-target text-4xl md:text-6xl lg:text-7xl font-bold text-white leading-tight mb-4 md:mb-6"
+            class="text-reveal-target text-5xl md:text-7xl lg:text-8xl font-bold text-white leading-tight mb-6 md:mb-8"
           >
             <span class="text-reveal-line">Строим дома из CLT</span>
             <span class="text-reveal-line">для жизни и бизнеса</span>
           </h1>
 
           <!-- Подзаголовок -->
-          <h2 class="animate-on-scroll text-xl md:text-2xl text-white/90 font-light mb-6 md:mb-8">
+          <h2 class="animate-on-scroll text-2xl md:text-3xl text-white/90 font-light mb-8 md:mb-10">
             Индивидуальный подход к строительству
           </h2>
 
           <!-- Описание -->
           <ul
-            class="animate-on-scroll delay-100 space-y-2 md:space-y-3 text-white/80 text-sm md:text-base lg:text-lg mb-8 md:mb-10"
+            class="animate-on-scroll delay-100 space-y-3 md:space-y-4 text-white/80 text-base md:text-lg lg:text-xl mb-10 md:mb-12"
           >
             <li>Профильная CLT компания</li>
             <li>Архитектура и реализация «под ключ»</li>
@@ -46,9 +46,9 @@
           <!-- Кнопка - видна сразу без анимации -->
           <a
             href="#contact"
-            class="magnetic-btn btn-liquid w-24 h-24 md:w-32 md:h-32 lg:w-40 lg:h-40 rounded-full bg-black flex flex-col items-start justify-center text-white font-medium hover:bg-gray-800 transition-colors pl-6 md:pl-8 lg:pl-10 pr-4 md:pr-6 lg:pr-8 py-4 md:py-6 lg:py-8"
+            class="magnetic-btn btn-liquid w-32 h-32 md:w-40 md:h-40 lg:w-48 lg:h-48 rounded-full bg-black flex flex-col items-start justify-center text-white font-medium hover:bg-gray-800 transition-colors pl-8 md:pl-10 lg:pl-12 pr-6 md:pr-8 lg:pr-10 py-6 md:py-8 lg:py-10"
           >
-            <span class="text-left leading-tight text-xs md:text-sm lg:text-lg"
+            <span class="text-left leading-tight text-base md:text-lg lg:text-xl"
               >ЗАКАЗАТЬ<br />ПРОЕКТ ↗</span
             >
           </a>
