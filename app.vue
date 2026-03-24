@@ -2,9 +2,11 @@
   <div class="relative">
     <!-- Noise overlay -->
     <div class="noise-overlay fixed inset-0 pointer-events-none z-[9000]"></div>
-    
-    <CustomCursor />
-    <SmoothScroll />
+
+    <ClientOnly>
+      <CustomCursor />
+      <SmoothScroll />
+    </ClientOnly>
     <NuxtPage />
   </div>
 </template>

@@ -1,5 +1,5 @@
 <template>
-  <div v-if="!isMobile()">
+  <div>
     <div class="custom-cursor" ref="cursor"></div>
     <div class="custom-cursor-dot" ref="cursorDot"></div>
   </div>
@@ -9,9 +9,6 @@
 const cursor = ref(null)
 const cursorDot = ref(null)
 
-// Check if device is mobile (available at component level for template)
-const isMobile = ref(false)
-
 let mouseX = 0, mouseY = 0
 let cursorX = 0, cursorY = 0
 let dotX = 0, dotY = 0
@@ -19,11 +16,9 @@ let dotX = 0, dotY = 0
 let animationFrameId = null
 
 onMounted(() => {
-  // Check if mobile
-  isMobile.value = window.innerWidth <= 768 || 'ontouchstart' in window || navigator.maxTouchPoints > 0
-
-  // Don't initialize on mobile
-  if (isMobile.value) {
+  // Check if mobile - don't initialize on mobile
+  const isMobile = window.innerWidth <= 768 || 'ontouchstart' in window || navigator.maxTouchPoints > 0
+  if (isMobile) {
     return
   }
 

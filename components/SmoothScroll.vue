@@ -4,23 +4,17 @@
 
 <script setup>
 let lenis = null
-let Lenis = null
-
-// Check if mobile
-const isMobile = ref(false)
 
 onMounted(async () => {
-  // Check if mobile
-  isMobile.value = window.innerWidth <= 768 || 'ontouchstart' in window || navigator.maxTouchPoints > 0
-
-  // Don't initialize Lenis on mobile - use native scroll
-  if (isMobile.value) {
+  // Check if mobile - don't initialize on mobile
+  const isMobile = window.innerWidth <= 768 || 'ontouchstart' in window || navigator.maxTouchPoints > 0
+  if (isMobile) {
     return
   }
 
   // Dynamic import to avoid SSR issues
   const lenisModule = await import('lenis')
-  Lenis = lenisModule.default
+  const Lenis = lenisModule.default
 
   lenis = new Lenis({
     duration: 1.2,
