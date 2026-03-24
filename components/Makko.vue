@@ -6,7 +6,7 @@
           <!-- Левая часть - большое фото -->
           <div class="makko-left-part">
             <img
-              src="/images/1_1.jpeg"
+              src="/images/1_1.webp"
               alt="Здание CLT"
               class="makko-main-image rounded-2xl w-full h-[300px] md:h-[400px] lg:h-full lg:min-h-[600px] object-cover"
             />
@@ -55,7 +55,7 @@
             <!-- Малое фото -->
             <div class="flex justify-end">
               <img
-                src="/images/helicopter.jpg"
+                src="/images/helicopter.webp"
                 alt="Вертолёт"
                 class="makko-helicopter-image rounded-xl w-full md:w-80 h-32 md:h-48 object-cover"
               />

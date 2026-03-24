@@ -6,7 +6,7 @@
           <!-- Большое фото -->
           <div class="relative team-photo-container">
             <img
-              src="/images/feater1.jpg"
+              src="/images/feater1.webp"
               alt="Команда"
               class="team-photo w-full h-[600px] object-cover rounded-2xl"
             />

@@ -88,16 +88,16 @@ const baseURL = config.app.baseURL
 const tabs = ['Публикации', 'Новости', 'События']
 
 const newsItems = [
-  { title: 'дом с панорамным остеклением', image: `${baseURL}images/feater1.jpg`, name: 'item1' },
-  { title: 'проект коттеджного посёлка', image: `${baseURL}images/feater2.jpeg`, name: 'item2' },
-  { title: 'загородный дом в лесу', image: `${baseURL}images/feater3.jpg`, name: 'item3' },
-  { title: 'современный деревянный дом', image: `${baseURL}images/1_1.jpeg`, name: 'item4' }
+  { title: 'дом с панорамным остеклением', image: `${baseURL}images/feater1.webp`, name: 'item1' },
+  { title: 'проект коттеджного посёлка', image: `${baseURL}images/feater2.webp`, name: 'item2' },
+  { title: 'загородный дом в лесу', image: `${baseURL}images/feater3.webp`, name: 'item3' },
+  { title: 'современный деревянный дом', image: `${baseURL}images/1_1.webp`, name: 'item4' }
 ]
 
 const bottomItems = [
-  { title: 'проект коттеджного посёлка', image: `${baseURL}images/feater2.jpeg`, name: 'bottom1' },
+  { title: 'проект коттеджного посёлка', image: `${baseURL}images/feater2.webp`, name: 'bottom1' },
   { title: '', image: null, name: 'bottom2' },
-  { title: 'загородный дом в лесу', image: `${baseURL}images/feater3.jpg`, name: 'bottom3' },
-  { title: 'современный деревянный дом', image: `${baseURL}images/1_1.jpeg`, name: 'bottom4' }
+  { title: 'загородный дом в лесу', image: `${baseURL}images/feater3.webp`, name: 'bottom3' },
+  { title: 'современный деревянный дом', image: `${baseURL}images/1_1.webp`, name: 'bottom4' }
 ]
 </script>

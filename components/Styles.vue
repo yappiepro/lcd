@@ -27,7 +27,7 @@
           <div class="flex justify-center">
             <div class="space-y-4">
               <img
-                src="/images/man.png"
+                src="/images/man.webp"
                 alt="Олег Макаревич"
                 class="rounded-lg w-48 object-cover"
               />

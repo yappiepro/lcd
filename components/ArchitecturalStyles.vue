@@ -27,7 +27,7 @@
           <!-- Центральное изображение дома - абсолютное позиционирование для desktop -->
           <div class="hidden lg:block absolute left-1/2 top-0 transform -translate-x-1/2 z-10">
             <img
-              src="/images/styles-house.jpg"
+              src="/images/styles-house.webp"
               alt="Современный дом"
               class="w-[300px] h-[600px] object-cover"
             />
@@ -36,7 +36,7 @@
           <!-- Изображение для мобильных - сверху -->
           <div class="lg:hidden flex justify-center mb-8">
             <img
-              src="/images/styles-house.jpg"
+              src="/images/styles-house.webp"
               alt="Современный дом"
               class="w-full max-w-xs h-auto object-cover rounded-2xl"
             />
