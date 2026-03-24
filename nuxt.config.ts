@@ -4,7 +4,7 @@ export default defineNuxtConfig({
   devtools: { enabled: true },
   modules: ['@nuxtjs/tailwindcss'],
   app: {
-    baseURL: process.env.NUXT_APP_BASE_URL || '/',
+    baseURL: '/lcd/',
     head: {
       title: 'СТРОИМ ИЗ CLT | Дома из CLT панелей',
       meta: [
@@ -16,9 +16,13 @@ export default defineNuxtConfig({
   },
   css: ['~/assets/css/animations.css', '~/assets/css/mobile.css'],
   nitro: {
-    preset: 'static'
+    preset: 'static',
+    staticAssets: {
+      dir: './dist'
+    }
   },
   routeRules: {
     '/**': { prerender: true }
-  }
+  },
+  ssr: false
 })
