@@ -228,12 +228,6 @@
     width: 100% !important;
   }
 
-  #projects .magnetic-btn.w-32,
-  #projects .w-28 {
-    width: 5rem !important;
-    height: 5rem !important;
-  }
-
   .projects-right-part img {
     height: 300px !important;
   }
@@ -294,12 +288,6 @@
   .makko-main-image {
     min-height: 250px !important;
     height: auto !important;
-  }
-
-  #makko .magnetic-btn.w-32,
-  #makko .w-24 {
-    width: 4rem !important;
-    height: 4rem !important;
   }
 
   .makko-helicopter-image {
@@ -410,12 +398,5 @@
 
   #makko h2 {
     font-size: 1.75rem !important;
-  }
-
-  .magnetic-btn.w-32,
-  .magnetic-btn.w-28,
-  .magnetic-btn.w-24 {
-    width: 3.5rem !important;
-    height: 3.5rem !important;
   }
 }
