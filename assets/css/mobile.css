@@ -3,6 +3,40 @@
    ============================================ */
 @media (max-width: 768px) {
   /* ==========================================
+     PREVENT ZOOM & SCROLL ISSUES
+     ========================================== */
+  html {
+    overflow-x: hidden !important;
+    width: 100%;
+    position: relative;
+  }
+  
+  body {
+    overflow-x: hidden !important;
+    width: 100%;
+    position: relative;
+    touch-action: pan-y;
+    -webkit-text-size-adjust: 100%;
+    -moz-text-size-adjust: 100%;
+    text-size-adjust: 100%;
+  }
+  
+  * {
+    box-sizing: border-box;
+  }
+  
+  /* Prevent horizontal scroll */
+  img, video, iframe {
+    max-width: 100%;
+    height: auto;
+  }
+  
+  /* Fix viewport height on mobile */
+  :root {
+    --vh: 1vh;
+  }
+  
+  /* ==========================================
      GENERAL LAYOUT
      ========================================== */
   .px-8, .px-12, .px-16 {
@@ -42,6 +76,49 @@
     line-height: 1.6 !important;
   }
 
+  /* ==========================================
+     DISABLE HEAVY EFFECTS ON MOBILE
+     ========================================== */
+  .gradient-orb {
+    display: none !important;
+  }
+  
+  /* Disable parallax on mobile */
+  .parallax-element {
+    transform: none !important;
+  }
+  
+  /* Disable tilt effect on mobile */
+  .tilt-card, .tilt-element {
+    transform: none !important;
+    transition: box-shadow 0.3s ease !important;
+  }
+  
+  .tilt-card:hover {
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+  }
+  
+  /* Simplify animations on mobile */
+  .animate-on-scroll {
+    transition: opacity 0.6s ease !important;
+    transform: translateY(30px) !important;
+  }
+  
+  /* ==========================================
+     HERO SECTION MOBILE
+     ========================================== */
+  .hero-section,
+  section.relative.min-h-screen {
+    min-height: 100vh !important;
+    min-height: calc(var(--vh, 1vh) * 100) !important;
+  }
+  
+  /* Fix video on mobile */
+  video[w-full] {
+    width: 100% !important;
+    max-width: 100% !important;
+  }
+  
   /* ==========================================
      BUTTONS - Touch-friendly (min 44px)
      ========================================== */

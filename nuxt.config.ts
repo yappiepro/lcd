@@ -9,7 +9,11 @@ export default defineNuxtConfig({
       title: 'СТРОИМ ИЗ CLT | Дома из CLT панелей',
       meta: [
         { charset: 'utf-8' },
-        { name: 'viewport', content: 'width=device-width, initial-scale=1, maximum-scale=5' },
+        {
+          name: 'viewport',
+          content:
+            'width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, viewport-fit=cover'
+        },
         {
           name: 'description',
           content:

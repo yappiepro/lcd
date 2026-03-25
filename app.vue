@@ -21,6 +21,13 @@ import {
 } from '~/composables/useAnimations'
 
 if (import.meta.client) {
+  // Set custom viewport height for iOS
+  const setVh = () => {
+    document.documentElement.style.setProperty('--vh', `${window.innerHeight * 0.01}px`)
+  }
+  setVh()
+  window.addEventListener('resize', setVh)
+
   onMounted(() => {
     const { initScrollAnimations } = useScrollAnimation()
     const { initTextReveal } = useTextReveal()
@@ -45,6 +52,11 @@ if (import.meta.client) {
         })
       }, 100)
     }, 100)
+
+    // Cleanup
+    onUnmounted(() => {
+      window.removeEventListener('resize', setVh)
+    })
   })
 }
 </script>
