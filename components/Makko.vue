@@ -44,7 +44,7 @@
             </div>
 
             <!-- Нижний текст -->
-            <div>
+            <div class="animate-on-scroll delay-300">
               <p class="text-white/70 text-xs md:text-sm leading-relaxed">
                 CLT позволяет нам осуществлять строительство домов в местах с высокой сложностью
                 доставки и монтажа. Вечная мерзлота, или палящее солнце юга больше не препятствие
@@ -53,11 +53,11 @@
             </div>
 
             <!-- Малое фото -->
-            <div class="flex justify-end">
+            <div class="animate-on-scroll delay-500 flex justify-end">
               <img
                 src="/images/helicopter.webp"
                 alt="Вертолёт"
-                class="makko-helicopter-image rounded-xl w-full md:w-80 h-32 md:h-48 object-cover"
+                class="image-reveal makko-helicopter-image rounded-xl w-full md:w-80 h-32 md:h-48 object-cover"
               />
             </div>
           </div>

@@ -5,7 +5,7 @@
         <div class="grid lg:grid-cols-4 gap-8">
           <!-- Левая часть - статистика -->
           <div class="space-y-8">
-            <h2 class="animate-on-scroll text-3xl font-bold text-white">Реализуем из:</h2>
+            <h2 class="text-reveal-target text-3xl font-bold text-white">Реализуем из:</h2>
 
             <!-- Прогресс бар 1 -->
             <div class="animate-on-scroll delay-100 space-y-2">
@@ -19,7 +19,7 @@
             </div>
 
             <!-- Прогресс бар 2 -->
-            <div class="animate-on-scroll delay-200 space-y-2">
+            <div class="animate-on-scroll delay-300 space-y-2">
               <div class="flex justify-between text-white">
                 <span>CLT и других материалов</span>
                 <span class="counter-animate" data-end="40">0</span><span>%</span>
@@ -33,7 +33,9 @@
           <!-- Карточки -->
           <div class="lg:col-span-3 grid md:grid-cols-3 gap-6 stagger-grid">
             <!-- Карточка 1 -->
-            <div class="tilt-card bg-[#1a1a1a] rounded-xl p-6 transition-transform duration-300">
+            <div
+              class="tilt-card scale-in bg-[#1a1a1a] rounded-xl p-6 transition-transform duration-300"
+            >
               <div class="text-white text-lg mb-4 pb-4 border-b border-gray-700">
                 Проектирование
               </div>
@@ -45,7 +47,9 @@
             </div>
 
             <!-- Карточка 2 -->
-            <div class="tilt-card bg-[#1a1a1a] rounded-xl p-6 transition-transform duration-300">
+            <div
+              class="tilt-card scale-in delay-200 bg-[#1a1a1a] rounded-xl p-6 transition-transform duration-300"
+            >
               <div class="text-white text-lg mb-4 pb-4 border-b border-gray-700">
                 Монтаж коробки дома
               </div>
@@ -57,7 +61,9 @@
             </div>
 
             <!-- Карточка 3 -->
-            <div class="tilt-card bg-[#1a1a1a] rounded-xl p-6 transition-transform duration-300">
+            <div
+              class="tilt-card scale-in delay-400 bg-[#1a1a1a] rounded-xl p-6 transition-transform duration-300"
+            >
               <div class="text-white text-lg mb-4 pb-4 border-b border-gray-700">Под ключ</div>
               <div class="flex items-baseline space-x-2">
                 <span class="text-7xl font-bold text-white counter-animate" data-end="180">0</span>

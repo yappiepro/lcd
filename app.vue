@@ -28,12 +28,23 @@ if (import.meta.client) {
     const { initParallax } = useParallax()
     const { initTilt } = useTiltEffect()
 
-    // Initialize all animations
-    initScrollAnimations()
-    initTextReveal()
-    initCounters()
-    initParallax()
-    initTilt()
+    // Initialize all animations with delays
+    setTimeout(() => {
+      initScrollAnimations()
+      initTextReveal()
+      initCounters()
+      initParallax()
+      initTilt()
+
+      // Trigger image reveal animations
+      setTimeout(() => {
+        document.querySelectorAll('.image-reveal').forEach((el, i) => {
+          setTimeout(() => {
+            el.classList.add('revealed')
+          }, i * 200)
+        })
+      }, 100)
+    }, 100)
   })
 }
 </script>

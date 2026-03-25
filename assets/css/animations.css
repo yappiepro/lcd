@@ -1,12 +1,12 @@
 
 /* ============================================
-   SCROLL ANIMATIONS
+   SCROLL ANIMATIONS - IMPROVED
    ============================================ */
 .animate-on-scroll {
   opacity: 0;
-  transform: translateY(60px);
-  transition: opacity 1s cubic-bezier(0.16, 1, 0.3, 1),
-              transform 1s cubic-bezier(0.16, 1, 0.3, 1);
+  transform: translateY(80px);
+  transition: opacity 1.2s cubic-bezier(0.16, 1, 0.3, 1),
+              transform 1.2s cubic-bezier(0.16, 1, 0.3, 1);
 }
 
 .animate-on-scroll.animated {
@@ -20,6 +20,100 @@
 .animate-on-scroll.delay-400 { transition-delay: 0.4s; }
 .animate-on-scroll.delay-500 { transition-delay: 0.5s; }
 .animate-on-scroll.delay-600 { transition-delay: 0.6s; }
+.animate-on-scroll.delay-700 { transition-delay: 0.7s; }
+.animate-on-scroll.delay-800 { transition-delay: 0.8s; }
+
+/* ============================================
+   IMAGE REVEAL EFFECT
+   ============================================ */
+.image-reveal {
+  position: relative;
+  overflow: hidden;
+}
+
+.image-reveal::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(180deg, rgba(17,17,17,0.8) 0%, rgba(17,17,17,0) 100%);
+  transform: scaleY(1);
+  transform-origin: bottom;
+  transition: transform 1.4s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.image-reveal.revealed::after {
+  transform: scaleY(0);
+  transform-origin: top;
+}
+
+.image-reveal img {
+  transform: scale(1.1);
+  transition: transform 1.4s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.image-reveal.revealed img {
+  transform: scale(1);
+}
+
+/* ============================================
+   FADE IN UP ANIMATION
+   ============================================ */
+.fade-in-up {
+  opacity: 0;
+  transform: translateY(40px);
+  transition: opacity 0.8s cubic-bezier(0.16, 1, 0.3, 1),
+              transform 0.8s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.fade-in-up.animated {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* ============================================
+   SCALE IN ANIMATION
+   ============================================ */
+.scale-in {
+  opacity: 0;
+  transform: scale(0.9);
+  transition: opacity 1s cubic-bezier(0.16, 1, 0.3, 1),
+              transform 1s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.scale-in.animated {
+  opacity: 1;
+  transform: scale(1);
+}
+
+/* ============================================
+   SLIDE IN LEFT/RIGHT
+   ============================================ */
+.slide-in-left {
+  opacity: 0;
+  transform: translateX(-60px);
+  transition: opacity 1s cubic-bezier(0.16, 1, 0.3, 1),
+              transform 1s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.slide-in-left.animated {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+.slide-in-right {
+  opacity: 0;
+  transform: translateX(60px);
+  transition: opacity 1s cubic-bezier(0.16, 1, 0.3, 1),
+              transform 1s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.slide-in-right.animated {
+  opacity: 1;
+  transform: translateX(0);
+}
 
 /* ============================================
    TEXT REVEAL ANIMATION

@@ -4,7 +4,7 @@
       <div class="max-w-[1600px] mx-auto">
         <!-- Заголовок -->
         <div class="text-center mb-16">
-          <h2 class="text-5xl md:text-5xl font-bold text-gray-900 text-left">
+          <h2 class="text-reveal-target text-5xl md:text-5xl font-bold text-gray-900 text-left">
             Технологии В Действии:<br />Кейсы и Готовые Решения
           </h2>
         </div>
@@ -106,7 +106,7 @@
 
           <!-- Правая часть - большое фото -->
           <div class="animate-on-scroll delay-200 tilt-container projects-right-part">
-            <div class="tilt-element overflow-hidden rounded-2xl mt-8 md:mt-12">
+            <div class="tilt-element image-reveal overflow-hidden rounded-2xl">
               <img
                 :src="projects[activeProject].image"
                 alt="Проект"

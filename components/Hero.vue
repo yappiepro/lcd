@@ -38,9 +38,9 @@
           <ul
             class="space-y-0 text-white/80 text-sm md:text-base lg:text-lg mb-10 md:mb-12 max-w-md"
           >
-            <li>Профильная CLT компания</li>
-            <li>Архитектура и реализация «под ключ»</li>
-            <li>Авторское сопровождение проекта и надзор</li>
+            <li class="animate-on-scroll">Профильная CLT компания</li>
+            <li class="animate-on-scroll delay-200">Архитектура и реализация «под ключ»</li>
+            <li class="animate-on-scroll delay-400">Авторское сопровождение проекта и надзор</li>
           </ul>
 
           <!-- Кнопка - видна сразу без анимации -->
