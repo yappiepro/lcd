@@ -95,11 +95,9 @@
               </div>
               <a
                 href="#contact"
-                class="magnetic-btn btn-liquid w-24 h-24 md:w-28 md:h-28 lg:w-32 lg:h-32 rounded-full bg-black flex flex-col items-center justify-center text-white font-medium hover:bg-gray-800 transition-colors px-5 md:px-6 lg:px-8 py-5 md:py-6 lg:py-8 flex-shrink-0"
+                class="magnetic-btn btn-liquid w-32 h-32 rounded-full bg-black flex flex-col items-center justify-center text-white font-medium hover:bg-gray-800 transition-colors px-8 py-8 flex-shrink-0"
               >
-                <span class="text-center leading-tight text-xs md:text-sm lg:text-base"
-                  >посмотреть<br />проекты ↗</span
-                >
+                <span class="text-center leading-tight text-sm">посмотреть<br />проекты ↗</span>
               </a>
             </div>
           </div>

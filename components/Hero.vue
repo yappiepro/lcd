@@ -20,10 +20,10 @@
     <!-- Основной контент -->
     <div class="relative z-10 flex-1 w-full px-8 md:px-12 lg:px-16 py-8 md:py-20">
       <div class="max-w-[1600px] mx-auto">
-        <div class="max-w-4xl mt-10 md:mt-10 lg:mt-14">
+        <div class="max-w-4xl mt-14 md:mt-10 lg:mt-14">
           <!-- Заголовок -->
           <h1
-            class="text-reveal-target text-6xl md:text-5xl lg:text-5xl font-bold text-white leading-none mb-6 md:mb-8"
+            class="text-reveal-target text-7xl md:text-5xl lg:text-5xl font-bold text-white leading-none mb-6 md:mb-8"
           >
             <span class="text-reveal-line">Строим дома из CLT</span>
             <span class="text-reveal-line">для жизни и бизнеса</span>
@@ -46,11 +46,9 @@
           <!-- Кнопка - видна сразу без анимации -->
           <a
             href="#contact"
-            class="magnetic-btn btn-liquid w-32 h-32 md:w-28 md:h-28 lg:w-32 lg:h-32 rounded-full bg-black flex flex-col items-center justify-center text-white font-medium hover:bg-gray-800 transition-colors px-8 md:px-6 lg:px-8 py-8 md:py-6 lg:py-8 mt-8 md:mt-10 lg:mt-12"
+            class="magnetic-btn btn-liquid w-32 h-32 rounded-full bg-black flex flex-col items-center justify-center text-white font-medium hover:bg-gray-800 transition-colors px-8 py-8 mt-8 md:mt-10 lg:mt-12"
           >
-            <span class="text-center leading-tight text-sm md:text-xs lg:text-base"
-              >ЗАКАЗАТЬ<br />ПРОЕКТ ↗</span
-            >
+            <span class="text-center leading-tight text-sm">ЗАКАЗАТЬ<br />ПРОЕКТ ↗</span>
           </a>
         </div>
       </div>
